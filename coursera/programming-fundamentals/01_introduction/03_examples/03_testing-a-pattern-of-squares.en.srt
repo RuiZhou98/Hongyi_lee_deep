@@ -1,0 +1,191 @@
+1
+00:00:02,380 --> 00:00:05,720
+In this video, we will test the algorithm
+
+2
+00:00:05,720 --> 00:00:08,505
+for a pattern of blue and red squares on a grid.
+
+3
+00:00:08,505 --> 00:00:12,315
+Remember that testing is going to make us more confident in our algorithm,
+
+4
+00:00:12,315 --> 00:00:16,340
+since generalizing is one of the harder parts of the programming process and is
+
+5
+00:00:16,340 --> 00:00:21,110
+prone to errors such as leaving something constant that should be a variable.
+
+6
+00:00:21,110 --> 00:00:22,835
+We need a grid to draw on,
+
+7
+00:00:22,835 --> 00:00:26,102
+an arrow to keep track of where in the algorithm we are,
+
+8
+00:00:26,102 --> 00:00:28,621
+and a box to list our variables in.
+
+9
+00:00:28,621 --> 00:00:35,350
+Let's use two for our value of N. We make a box for x and start counting at zero.
+
+10
+00:00:35,350 --> 00:00:39,930
+Then we make a box for y and start counting at x's value which is zero here.
+
+11
+00:00:39,930 --> 00:00:43,135
+Now, we need to decide if x plus y is a multiple of three.
+
+12
+00:00:43,135 --> 00:00:47,790
+It is, so we go inside the if statement and put a blue square at zero, zero.
+
+13
+00:00:47,790 --> 00:00:50,580
+Now, there are no more steps for this iteration of y,
+
+14
+00:00:50,580 --> 00:00:52,935
+so we continue counting with y equals one.
+
+15
+00:00:52,935 --> 00:00:55,495
+Zero plus one is not a multiple of three,
+
+16
+00:00:55,495 --> 00:00:59,700
+so we enter the otherwise clause and put a red square at zero, one.
+
+17
+00:00:59,700 --> 00:01:01,545
+There are no more steps for this y,
+
+18
+00:01:01,545 --> 00:01:03,450
+so we'll count the next one.
+
+19
+00:01:03,450 --> 00:01:05,665
+Zero plus two is not a multiple of three,
+
+20
+00:01:05,665 --> 00:01:08,100
+so we'll put a red square at zero, two.
+
+21
+00:01:08,100 --> 00:01:10,345
+We continue counting, and y is three.
+
+22
+00:01:10,345 --> 00:01:15,065
+But we were only counting from x to N so we don't do any of these steps.
+
+23
+00:01:15,065 --> 00:01:16,935
+And we continue counting for x,
+
+24
+00:01:16,935 --> 00:01:18,470
+so now, x is one.
+
+25
+00:01:18,470 --> 00:01:21,360
+We're going to count from one to N and call that y.
+
+26
+00:01:21,360 --> 00:01:24,055
+One plus one is not a multiple of three,
+
+27
+00:01:24,055 --> 00:01:26,190
+so we put a red square at one, one.
+
+28
+00:01:26,190 --> 00:01:30,105
+Incrementing y, one plus two is a multiple of three,
+
+29
+00:01:30,105 --> 00:01:32,665
+so we put a blue square at one, two.
+
+30
+00:01:32,665 --> 00:01:34,120
+We're done counting for y,
+
+31
+00:01:34,120 --> 00:01:36,375
+so next, we count our next x.
+
+32
+00:01:36,375 --> 00:01:37,995
+Counting from two to two,
+
+33
+00:01:37,995 --> 00:01:40,130
+two plus two is not a multiple of three,
+
+34
+00:01:40,130 --> 00:01:41,670
+so we put a red square.
+
+35
+00:01:41,670 --> 00:01:43,155
+We finished counting for y,
+
+36
+00:01:43,155 --> 00:01:45,460
+so we count for the next x.
+
+37
+00:01:45,460 --> 00:01:50,120
+We're done counting for x since we only want to count to N which is two.
+
+38
+00:01:50,120 --> 00:01:51,790
+So we're done with the counting,
+
+39
+00:01:51,790 --> 00:01:54,700
+and we finished executing this algorithm.
+
+40
+00:01:54,700 --> 00:01:57,495
+We are done, and we found the answer we expect.
+
+41
+00:01:57,495 --> 00:01:58,770
+We can say our algorithm,
+
+42
+00:01:58,770 --> 00:02:00,955
+at least, works for N equals 2.
+
+43
+00:02:00,955 --> 00:02:04,470
+We're a little bit more confident in our algorithm because we've shown it to be
+
+44
+00:02:04,470 --> 00:02:09,720
+correct for at least one value of N that was not what we used to come up with it.
+
+45
+00:02:09,720 --> 00:02:11,955
+If we wanted to be more confident,
+
+46
+00:02:11,955 --> 00:02:14,445
+we would have to test it more thoroughly.
+
+47
+00:02:14,445 --> 00:02:17,850
+As always, testing can't prove that it's correct,
+
+48
+00:02:17,850 --> 00:02:21,000
+it can only make us more and more confident.

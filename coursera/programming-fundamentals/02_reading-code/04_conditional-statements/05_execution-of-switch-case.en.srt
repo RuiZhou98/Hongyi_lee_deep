@@ -1,0 +1,238 @@
+1
+00:00:03,436 --> 00:00:07,689
+In this video, we're going to execute code
+with a function g that contains a switch
+
+2
+00:00:07,689 --> 00:00:09,180
+case statement.
+
+3
+00:00:09,180 --> 00:00:12,802
+As always, we begin with the execution
+arrow at the start of main for
+
+4
+00:00:12,802 --> 00:00:15,960
+the statement a = g(10, 4);.
+
+5
+00:00:15,960 --> 00:00:20,242
+We make a box per a since we're
+declaring it, then we create a frame for
+
+6
+00:00:20,242 --> 00:00:24,535
+the function g, and populate it with
+the values 10 for n and 4 for x.
+
+7
+00:00:24,535 --> 00:00:28,870
+We make a note of where we are and we'll
+return to when the function is complete,
+
+8
+00:00:28,870 --> 00:00:30,113
+and enter function g.
+
+9
+00:00:30,113 --> 00:00:35,310
+We have the switch statement x + n
+in this case is 4 + 10 which is 14.
+
+10
+00:00:35,310 --> 00:00:38,520
+So we find the matching case label,
+case 14 and
+
+11
+00:00:38,520 --> 00:00:43,360
+transition our execution arrow inside that
+case and begin executing statements there.
+
+12
+00:00:43,360 --> 00:00:49,490
+The first statement we encounter is
+the return statement n- x, 10- 4 = 6.
+
+13
+00:00:49,490 --> 00:00:52,120
+As always when we encounter
+a return statement,
+
+14
+00:00:52,120 --> 00:00:56,100
+we're going to make a note of the value to
+return and leave the function that we're
+
+15
+00:00:56,100 --> 00:00:58,860
+in going back to the calling function and
+destroying the frame.
+
+16
+00:00:59,900 --> 00:01:03,243
+We finished the assignment
+statement with a = 6.
+
+17
+00:01:03,243 --> 00:01:06,258
+Now we reach int b = g(a, 2).
+
+18
+00:01:06,258 --> 00:01:10,671
+So we create a box for b, draw a frame for
+g, passing in the arguments a,
+
+19
+00:01:10,671 --> 00:01:11,860
+which is 6 and 2.
+
+20
+00:01:11,860 --> 00:01:14,630
+We note our position and enter function g.
+
+21
+00:01:15,750 --> 00:01:19,260
+Here, our selection expression is 2 + 6,
+which is 8, so
+
+22
+00:01:19,260 --> 00:01:23,740
+we're going to go into the case for
+8 and begin executing statements there.
+
+23
+00:01:23,740 --> 00:01:27,330
+The first statement we
+encounter is x = x + 1, so
+
+24
+00:01:27,330 --> 00:01:30,490
+we update the box for
+x to have 3 instead of 2.
+
+25
+00:01:30,490 --> 00:01:32,920
+Now we fall through to the next case.
+
+26
+00:01:32,920 --> 00:01:34,652
+There is no break statement here, and
+
+27
+00:01:34,652 --> 00:01:37,585
+we don't worry about the fact
+that there is another case label.
+
+28
+00:01:37,585 --> 00:01:41,340
+We just keep executing statements
+until we reach a break.
+
+29
+00:01:41,340 --> 00:01:44,030
+The next statement is n = n- 1.
+
+30
+00:01:44,030 --> 00:01:46,916
+So we're going to update
+the value of n to be 5.
+
+31
+00:01:46,916 --> 00:01:49,430
+And now we do reach a break statement.
+
+32
+00:01:49,430 --> 00:01:52,450
+This break statement is going
+to take us out of the innermost
+
+33
+00:01:52,450 --> 00:01:56,220
+enclosing switch statement,
+the boundaries which are here.
+
+34
+00:01:56,220 --> 00:01:59,719
+As we'll see later, break could
+take us out of other constructs.
+
+35
+00:01:59,719 --> 00:02:04,681
+But in this case, it'll take us out of
+the switch statement that encloses it and
+
+36
+00:02:04,681 --> 00:02:07,860
+we begin executing code after the switch.
+
+37
+00:02:07,860 --> 00:02:14,542
+The next statement we encounter says to
+return x * n, which is 3 * 5, which is 15.
+
+38
+00:02:14,542 --> 00:02:17,632
+So we return 15, return to main, and
+
+39
+00:02:17,632 --> 00:02:21,850
+destroy the frame for
+g and assign 15 to b.
+
+40
+00:02:21,850 --> 00:02:24,870
+Now we have int c = g(9, b).
+
+41
+00:02:24,870 --> 00:02:28,489
+So we create a box for c,
+a frame for g with arguments 9 and
+
+42
+00:02:28,489 --> 00:02:32,123
+b which is 15 and note where we are and
+enter function g.
+
+43
+00:02:32,123 --> 00:02:34,747
+Evaluating this expression gives us 24.
+
+44
+00:02:34,747 --> 00:02:37,617
+Looking at our case labels,
+we have 8, 0, and 14.
+
+45
+00:02:37,617 --> 00:02:42,342
+None of those match 24, so we use the
+default which matches anything that's not
+
+46
+00:02:42,342 --> 00:02:45,230
+named explicitly by another case label.
+
+47
+00:02:45,230 --> 00:02:49,080
+We'll jump into the default case and
+begin executing statements there.
+
+48
+00:02:49,080 --> 00:02:52,980
+We do x = n, assigning 9 to
+x which brings us to a break
+
+49
+00:02:52,980 --> 00:02:55,860
+which takes us out of the inside
+of the switch statement.
+
+50
+00:02:55,860 --> 00:02:59,160
+We now return x * n which is 81.
+
+51
+00:02:59,160 --> 00:03:04,410
+Back to main, we finish our assignment and
+return zero from main exiting the program.

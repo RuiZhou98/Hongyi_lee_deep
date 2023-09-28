@@ -1,0 +1,27 @@
+In this video, we show an example of how
+you can use the printf function to print output to the terminal. We have our usual frame for
+main as well as a box for output. And the execution arrow
+is at the start of main. We begin by declaring and
+initializing a to 42. Then we reach a printf call. We're going to print
+the string Hello World. It'll just print this string directly,
+there are no formats specifies at all. So our output is Hello world. The next printf call
+with print the string a. Note that this prints the literal
+letter a since it is enclosed in quotation marks and
+is therefore a string literal. This has nothing with the variable a. So our output is a. And we return 0 and exit main. What would you do if you wanted to instead
+print the value of the variable a? The f in printf stands for formatted, and there are several format specifiers
+you can use to format your output. In this example, first we declare and
+initialize integers a to 42 and b to 7. Then we reach a printf call
+with a format specifier. In this case, %d. %d formats integers as decimal numbers. And you'll learn later about
+other format specifiers. %d means printf will look at
+the corresponding argument to see what integer format is a decimal number. In this case, it is given variable a. So it prints the decimal representation of the number 42 in the location
+in the string where the %d is. The next call to printf has two %ds. The first refers to b, the next argument
+after the string which is 7, and the second of these refers to a + b, which
+is evaluated like any other expression. So it's 42 + 7 which is 49. So the output is b is 7 and a + b is 49. We return 0 and exit main. Another important thing to know
+about printf is escape sequences. An escape sequence
+begins with a backslash. The most common one is
+\n which means new line. This printf call has two \ns. So you should print two new
+lines after Hello World. This statement declares and
+initializes b to 7. This printf call has a \t in it
+which means a tab, is useful for lining up output. The output is, my answer is tab 7,
+we return in exit main. This introduction has shown you a few
+uses of the printf function and you'll see more later in the course.

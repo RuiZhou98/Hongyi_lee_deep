@@ -1,0 +1,369 @@
+1
+00:00:03,542 --> 00:00:07,630
+In the previous video, we carefully wrote
+down the steps we followed in working
+
+2
+00:00:07,630 --> 00:00:09,740
+a specific case by hand.
+
+3
+00:00:09,740 --> 00:00:13,650
+In this video, we generalize the steps
+to finding the closest point.
+
+4
+00:00:14,780 --> 00:00:17,890
+Looking at our steps,
+some of them are similar, but
+
+5
+00:00:17,890 --> 00:00:20,240
+we need to make them match up.
+
+6
+00:00:20,240 --> 00:00:23,420
+Each of these colored boxes
+contain similar steps.
+
+7
+00:00:23,420 --> 00:00:26,550
+First a computation, then a comparison.
+
+8
+00:00:26,550 --> 00:00:29,690
+We also have some steps
+we only do sometimes, and
+
+9
+00:00:29,690 --> 00:00:32,230
+we need to figure out under
+what conditions we do them.
+
+10
+00:00:33,520 --> 00:00:36,740
+We also have some steps we only
+do at the start and the end, and
+
+11
+00:00:36,740 --> 00:00:39,990
+we're going to need to
+generalize the numbers in those.
+
+12
+00:00:39,990 --> 00:00:44,060
+So the first thing let's do is make
+these similar stuffs match up.
+
+13
+00:00:44,060 --> 00:00:47,562
+Why are computing 9 squared
+plus 6 squared here,
+
+14
+00:00:47,562 --> 00:00:50,680
+7 squared plus -1 squared next and so on.
+
+15
+00:00:52,330 --> 00:00:58,580
+If we look at our picture, the 9 comes
+from delta x and the 6 comes from delta y.
+
+16
+00:00:58,580 --> 00:01:03,730
+The difference between the point the point
+10, 5 in set S and 1, -1, the point p.
+
+17
+00:01:05,100 --> 00:01:09,460
+The same is true for all of these other
+numbers, the differences in x and
+
+18
+00:01:09,460 --> 00:01:12,550
+y between points s and p.
+
+19
+00:01:12,550 --> 00:01:18,660
+So we might rewrite all of these
+steps to have the points S1,
+
+20
+00:01:18,660 --> 00:01:21,110
+S2, etc., up to S6.
+
+21
+00:01:22,210 --> 00:01:26,610
+We'll call the first point s0
+when we get to the starting step.
+
+22
+00:01:26,610 --> 00:01:28,780
+Programmers often like to
+start counting from 0.
+
+23
+00:01:28,780 --> 00:01:36,900
+The first substitution gives us s1's
+x- P's x quantity squared + s1's
+
+24
+00:01:36,900 --> 00:01:41,860
+y- P's y quantity squared,
+then the square root of the whole thing.
+
+25
+00:01:43,520 --> 00:01:48,470
+Now, the result of this computation
+won't always be 10.82 or 7.07,
+
+26
+00:01:48,470 --> 00:01:53,790
+so we should give these a name,
+such as current distance.
+
+27
+00:01:53,790 --> 00:01:56,870
+But when we do this,
+we're going to have to keep track of
+
+28
+00:01:56,870 --> 00:02:00,910
+each time we use this number and
+update them, too.
+
+29
+00:02:00,910 --> 00:02:05,510
+That is if we change the first
+occurrence of 10.82 to currentDistance,
+
+30
+00:02:05,510 --> 00:02:10,398
+then we need to make this line
+compare current distance to 8.06.
+
+31
+00:02:10,398 --> 00:02:14,450
+But some of these numbers
+are used in other ways, so
+
+32
+00:02:14,450 --> 00:02:16,170
+these are going to need a different name.
+
+33
+00:02:17,450 --> 00:02:21,320
+Here, we've replaced the value for
+each computation with currentDistance.
+
+34
+00:02:22,320 --> 00:02:25,490
+Notice that the only times
+we update the best choice
+
+35
+00:02:25,490 --> 00:02:27,980
+are when current distance is smaller.
+
+36
+00:02:27,980 --> 00:02:30,970
+That means we must have been keeping
+track of the best distance so
+
+37
+00:02:30,970 --> 00:02:33,540
+far, which we now need to update, as well.
+
+38
+00:02:35,030 --> 00:02:39,760
+Now, we update the best distance when
+the current distance is smaller, and
+
+39
+00:02:39,760 --> 00:02:43,509
+we can use the value of best distance for
+comparison with future computations.
+
+40
+00:02:45,140 --> 00:02:52,330
+Let's look at the first 8.06 we compute
+and consider the other places it occurs.
+
+41
+00:02:52,330 --> 00:02:55,830
+The computation can be achieved
+like the others using S0.
+
+42
+00:02:55,830 --> 00:03:00,405
+Since this is our first computation,
+it might as well be the best so far,
+
+43
+00:03:00,405 --> 00:03:05,734
+then we can replace the other instance
+with bestDistance, making the steps match.
+
+44
+00:03:05,734 --> 00:03:08,727
+To continue generalizing,
+let's look at the point for
+
+45
+00:03:08,727 --> 00:03:11,480
+best choice 2,7,8,-2, and -3,-5.
+
+46
+00:03:11,480 --> 00:03:17,660
+Each of these is the particular
+point we're looking at so
+
+47
+00:03:17,660 --> 00:03:21,870
+we can replace those with S0, S2, and S4.
+
+48
+00:03:23,090 --> 00:03:26,260
+Recall that we only updated the best
+choice when the current distance
+
+49
+00:03:26,260 --> 00:03:27,370
+was smaller.
+
+50
+00:03:27,370 --> 00:03:31,440
+We can make each of these steps the same
+by including instructions to compare
+
+51
+00:03:31,440 --> 00:03:34,610
+current distance and
+best distance each time, but
+
+52
+00:03:34,610 --> 00:03:37,600
+only update best distance if
+current distance is smaller.
+
+53
+00:03:38,810 --> 00:03:42,140
+Now we do the same steps for
+each of the points.
+
+54
+00:03:42,140 --> 00:03:45,010
+Each colored box is the same
+as the others, except for
+
+55
+00:03:45,010 --> 00:03:48,960
+what point we're looking at,
+S1, S2, through S6.
+
+56
+00:03:48,960 --> 00:03:52,190
+That means we an express
+this as a repetition
+
+57
+00:03:52,190 --> 00:03:56,700
+where we count from 1 to the number
+of points in S exclusive.
+
+58
+00:03:56,700 --> 00:03:58,220
+We'll call each number that we count i,
+
+59
+00:03:58,220 --> 00:04:03,226
+and we'll compute the distance
+from the ieth point in S to P.
+
+60
+00:04:03,226 --> 00:04:06,490
+If current distance is
+smaller than best distance,
+
+61
+00:04:06,490 --> 00:04:12,500
+then we'll update best choice to SI and
+best distance to current distance.
+
+62
+00:04:12,500 --> 00:04:16,440
+We haven't changed our steps for
+the start or end, but
+
+63
+00:04:16,440 --> 00:04:19,790
+we should generalize the point
+we give as our answer.
+
+64
+00:04:19,790 --> 00:04:22,920
+The answer is not always going to be -3,
+-5.
+
+65
+00:04:22,920 --> 00:04:24,320
+Why did we say that?
+
+66
+00:04:25,330 --> 00:04:29,480
+The answer was the best choice when
+we finished counting, so in general,
+
+67
+00:04:29,480 --> 00:04:31,130
+we'll give an answer of best choice.
+
+68
+00:04:32,580 --> 00:04:36,390
+The only other thing we need to
+do is consider a corner case.
+
+69
+00:04:36,390 --> 00:04:39,270
+What if S has 0 points in it?
+
+70
+00:04:39,270 --> 00:04:42,900
+In that case,
+we give an answer of no answer exists.
+
+71
+00:04:42,900 --> 00:04:46,480
+This corner case was not revealed
+by the example we just worked, but
+
+72
+00:04:46,480 --> 00:04:48,820
+it would have come up through testing.
+
+73
+00:04:48,820 --> 00:04:51,100
+Working an example with 0 points,
+
+74
+00:04:51,100 --> 00:04:54,960
+we would have had a problem doing
+the first step of our computation.
+
+75
+00:04:54,960 --> 00:04:58,810
+So we report no answer exists and
+skip all of these other steps.
+
+76
+00:05:00,000 --> 00:05:01,370
+So here is our algorithm.
+
+77
+00:05:01,370 --> 00:05:03,210
+You can test it yourself.
+
+78
+00:05:03,210 --> 00:05:06,530
+Later on, we'll learn how to
+translate this into code.

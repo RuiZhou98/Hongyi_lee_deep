@@ -1,0 +1,291 @@
+1
+00:00:02,260 --> 00:00:06,485
+The next piece of C that you are going to learn about is functions.
+
+2
+00:00:06,485 --> 00:00:08,640
+To see why they are so important,
+
+3
+00:00:08,640 --> 00:00:11,630
+let us take a look back at our closestPoint algorithm.
+
+4
+00:00:11,630 --> 00:00:15,920
+There are two places here where this algorithm computes the distance between two points.
+
+5
+00:00:15,920 --> 00:00:17,195
+Why is that important?
+
+6
+00:00:17,195 --> 00:00:20,075
+Well, we need to do the same computation twice.
+
+7
+00:00:20,075 --> 00:00:25,535
+Without functions, we would write the same code twice and that is just in this problem.
+
+8
+00:00:25,535 --> 00:00:30,340
+What if we have other problems that also need to compute the distance between two points?
+
+9
+00:00:30,340 --> 00:00:33,080
+We have a few examples of other problems that would
+
+10
+00:00:33,080 --> 00:00:35,860
+need to compute the distance between two points,
+
+11
+00:00:35,860 --> 00:00:37,565
+but there are many others.
+
+12
+00:00:37,565 --> 00:00:39,935
+We could rewrite the code each time,
+
+13
+00:00:39,935 --> 00:00:44,000
+which may not seem like a big deal for something as small as computing
+
+14
+00:00:44,000 --> 00:00:49,110
+the distance but we want to avoid duplicating code whenever possible.
+
+15
+00:00:49,110 --> 00:00:50,825
+Every time we rewrite code,
+
+16
+00:00:50,825 --> 00:00:56,210
+we run the risk of making mistakes and introducing bugs into our program.
+
+17
+00:00:56,210 --> 00:01:01,010
+Furthermore, it is really boring to rewrite the same code again and again.
+
+18
+00:01:01,010 --> 00:01:06,530
+Instead, we should abstract the computation for distance out into a function of its own.
+
+19
+00:01:06,530 --> 00:01:10,010
+Making distance its own function means we can reuse
+
+20
+00:01:10,010 --> 00:01:14,740
+that algorithm any place we need it without rewriting it. How would this work?
+
+21
+00:01:14,740 --> 00:01:16,835
+Well, our closestPoint function would,
+
+22
+00:01:16,835 --> 00:01:19,450
+in its code, call the distance function.
+
+23
+00:01:19,450 --> 00:01:23,990
+That is, it would ask the distance function to perform its computation.
+
+24
+00:01:23,990 --> 00:01:28,250
+To do this, our closestPoint function would first pass in
+
+25
+00:01:28,250 --> 00:01:32,930
+parameter values specifying which points the distance function should compute on.
+
+26
+00:01:32,930 --> 00:01:35,525
+The distance function would execute its code,
+
+27
+00:01:35,525 --> 00:01:39,255
+doing whatever statements are in it according to the rules you are learning.
+
+28
+00:01:39,255 --> 00:01:40,850
+It finishes when it comes up with
+
+29
+00:01:40,850 --> 00:01:44,330
+an answer which returns back to the function that called it.
+
+30
+00:01:44,330 --> 00:01:47,400
+When it returns, the distance function is done
+
+31
+00:01:47,400 --> 00:01:50,705
+and the calling function continues its own execution,
+
+32
+00:01:50,705 --> 00:01:54,180
+making use of the answer it got from the function it called.
+
+33
+00:01:54,180 --> 00:01:56,085
+So how is this helpful?
+
+34
+00:01:56,085 --> 00:02:00,470
+First, we can reuse this distance computation any time we need.
+
+35
+00:02:00,470 --> 00:02:02,105
+We don't have to rewrite it.
+
+36
+00:02:02,105 --> 00:02:06,845
+We can just call the distance function to compute the distance between any two points.
+
+37
+00:02:06,845 --> 00:02:10,310
+Whether we need to compute the distance at the various places in
+
+38
+00:02:10,310 --> 00:02:12,230
+the closestPoint function or in
+
+39
+00:02:12,230 --> 00:02:17,165
+some other problem we are solving doesn't matter, we just call it.
+
+40
+00:02:17,165 --> 00:02:21,170
+The other important benefit of functions is the abstraction.
+
+41
+00:02:21,170 --> 00:02:24,035
+Abstraction is the separation of the interface,
+
+42
+00:02:24,035 --> 00:02:25,625
+meaning what something does,
+
+43
+00:02:25,625 --> 00:02:29,115
+from its implementation, meaning how it does it.
+
+44
+00:02:29,115 --> 00:02:31,280
+Once we have written the distance function,
+
+45
+00:02:31,280 --> 00:02:35,410
+we can just make use of it without thinking about its inner workings.
+
+46
+00:02:35,410 --> 00:02:37,970
+As you build larger and larger programs,
+
+47
+00:02:37,970 --> 00:02:40,955
+abstraction becomes more and more important.
+
+48
+00:02:40,955 --> 00:02:43,685
+You aren't limited to two functions either.
+
+49
+00:02:43,685 --> 00:02:48,435
+You can have many functions which can call as many other functions as they need to.
+
+50
+00:02:48,435 --> 00:02:53,285
+For example, suppose our closestPoint function were part of a much larger program,
+
+51
+00:02:53,285 --> 00:02:56,780
+which has information about various types of locations and
+
+52
+00:02:56,780 --> 00:03:01,230
+uses that information to give us the nearest location of a particular type.
+
+53
+00:03:01,230 --> 00:03:03,225
+You might end up with something like this.
+
+54
+00:03:03,225 --> 00:03:06,320
+The main function, which is where all C programs start,
+
+55
+00:03:06,320 --> 00:03:11,321
+might call a function to find the store nearest point 42,17,
+
+56
+00:03:11,321 --> 00:03:14,510
+passing in parameters to specify this information.
+
+57
+00:03:14,510 --> 00:03:20,170
+That function might then call another function to find all locations whose type is store.
+
+58
+00:03:20,170 --> 00:03:23,390
+The getByType function could then return back a list of
+
+59
+00:03:23,390 --> 00:03:26,705
+locations for stores which findNearest can then use.
+
+60
+00:03:26,705 --> 00:03:30,275
+It is totally fine for findNearest to then call another function
+
+61
+00:03:30,275 --> 00:03:34,760
+such as our closestPoint function to find the point nearest the location we want.
+
+62
+00:03:34,760 --> 00:03:36,675
+As we previously discussed,
+
+63
+00:03:36,675 --> 00:03:39,710
+closestPoint can call distance to compute the distance
+
+64
+00:03:39,710 --> 00:03:43,610
+between two points and it will return back the distance it computed.
+
+65
+00:03:43,610 --> 00:03:46,250
+Of course, it is totally fine for closestPoint to
+
+66
+00:03:46,250 --> 00:03:49,115
+call distance as many times as it needs,
+
+67
+00:03:49,115 --> 00:03:52,115
+getting back the answer for whatever points it passed in.
+
+68
+00:03:52,115 --> 00:03:56,670
+When closestPoint finishes its computation and figures out its answer,
+
+69
+00:03:56,670 --> 00:04:00,200
+it returns that value to the function that called it which then
+
+70
+00:04:00,200 --> 00:04:04,655
+finishes its computation and returns its answer to the function that called it.
+
+71
+00:04:04,655 --> 00:04:06,255
+Okay, great.
+
+72
+00:04:06,255 --> 00:04:08,890
+Now, you have the high-level concepts of functions.
+
+73
+00:04:08,890 --> 00:04:12,860
+Let's dive into their syntax and semantics in C.

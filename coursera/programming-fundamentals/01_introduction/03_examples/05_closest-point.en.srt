@@ -1,0 +1,347 @@
+1
+00:00:02,470 --> 00:00:06,230
+In this video, we're going to work the problem of finding
+
+2
+00:00:06,230 --> 00:00:09,905
+the closest point out of a set of points to some other given point.
+
+3
+00:00:09,905 --> 00:00:13,060
+We'll start by doing an instance of this problem by ourselves.
+
+4
+00:00:13,060 --> 00:00:15,920
+To do that, I've begun by drawing
+
+5
+00:00:15,920 --> 00:00:20,300
+a Cartesian coordinate grid and choosing a set S of points,
+
+6
+00:00:20,300 --> 00:00:21,762
+which you can see here,
+
+7
+00:00:21,762 --> 00:00:25,325
+another point P, which is one, negative one.
+
+8
+00:00:25,325 --> 00:00:28,640
+We're going to find the point in S that is closest to
+
+9
+00:00:28,640 --> 00:00:34,660
+P. The first thing I'm going to do is to draw my points on my Cartesian plane.
+
+10
+00:00:34,660 --> 00:00:37,950
+Now, I can begin working through this.
+
+11
+00:00:37,950 --> 00:00:40,517
+First, I need some domain knowledge.
+
+12
+00:00:40,517 --> 00:00:45,577
+I need the mathematical definition of the distance between two points,
+
+13
+00:00:45,577 --> 00:00:46,850
+which if you don't remember,
+
+14
+00:00:46,850 --> 00:00:50,120
+is the difference in the x values squared plus the difference in
+
+15
+00:00:50,120 --> 00:00:54,245
+the y values squared and then we take the square root of that.
+
+16
+00:00:54,245 --> 00:00:59,230
+So the way that I would do this is calculate the distance between P and two,
+
+17
+00:00:59,230 --> 00:01:03,575
+seven, and I would come up with 8.06.
+
+18
+00:01:03,575 --> 00:01:07,670
+Then, I would compute the distance between P and 10,
+
+19
+00:01:07,670 --> 00:01:11,250
+5 and come up with 10.82.
+
+20
+00:01:11,250 --> 00:01:12,760
+The first point was closer,
+
+21
+00:01:12,760 --> 00:01:15,105
+so I'm going to keep that.
+
+22
+00:01:15,105 --> 00:01:19,105
+This point is 7.07 away,
+
+23
+00:01:19,105 --> 00:01:22,460
+so I'm going to keep the new closest point so far.
+
+24
+00:01:22,460 --> 00:01:25,695
+This point is 7.81 away,
+
+25
+00:01:25,695 --> 00:01:28,785
+so eight, negative two is still closer.
+
+26
+00:01:28,785 --> 00:01:32,440
+This point is 5.66 away,
+
+27
+00:01:32,440 --> 00:01:35,160
+so we have a new closest point.
+
+28
+00:01:35,160 --> 00:01:38,480
+This point is 9.06 away,
+
+29
+00:01:38,480 --> 00:01:41,615
+so negative three, negative five is closer.
+
+30
+00:01:41,615 --> 00:01:44,555
+This point is 9.22 away,
+
+31
+00:01:44,555 --> 00:01:48,500
+so negative three, negative five is still closer.
+
+32
+00:01:48,500 --> 00:01:51,800
+And there are no more points to test, so negative three,
+
+33
+00:01:51,800 --> 00:01:58,000
+negative five is my answer to which point is closest to one, negative one.
+
+34
+00:01:58,000 --> 00:02:00,410
+If we visually inspect this picture,
+
+35
+00:02:00,410 --> 00:02:02,480
+that seems pretty reasonable.
+
+36
+00:02:02,480 --> 00:02:04,740
+It looks like the closest.
+
+37
+00:02:04,740 --> 00:02:09,100
+Now, I write down exactly what I just did.
+
+38
+00:02:09,100 --> 00:02:12,892
+I computed one squared plus eight squared,
+
+39
+00:02:12,892 --> 00:02:16,915
+took the square root and got about 8.06.
+
+40
+00:02:16,915 --> 00:02:22,685
+I computed the square root of nine squared plus six squared and got 10.82,
+
+41
+00:02:22,685 --> 00:02:29,370
+and I compared 10.82 to 8.06 and said 8.06 is smaller.
+
+42
+00:02:29,370 --> 00:02:34,985
+I computed the square root of seven squared plus negative one squared and got 7.07,
+
+43
+00:02:34,985 --> 00:02:41,038
+and I compared 7.07 to 8.06 and said 7.07 is smaller,
+
+44
+00:02:41,038 --> 00:02:43,255
+so this is a better choice.
+
+45
+00:02:43,255 --> 00:02:50,195
+Then I compared the square root of six squared plus negative five squared and got 7.81.
+
+46
+00:02:50,195 --> 00:03:00,745
+I compared 7.81 with 7.07 and got that 7.07 was smaller and so on and so on and so on.
+
+47
+00:03:00,745 --> 00:03:04,355
+And then when I got to the end,
+
+48
+00:03:04,355 --> 00:03:08,595
+I gave my answer as negative three, negative five.
+
+49
+00:03:08,595 --> 00:03:11,970
+These seem like reasonable steps,
+
+50
+00:03:11,970 --> 00:03:14,690
+but we actually glossed over
+
+51
+00:03:14,690 --> 00:03:17,990
+something that we did in the process of writing these steps down.
+
+52
+00:03:17,990 --> 00:03:20,090
+It is very important that we write our steps down
+
+53
+00:03:20,090 --> 00:03:22,265
+carefully because if we're missing steps,
+
+54
+00:03:22,265 --> 00:03:26,365
+we're going to miss them when we go to generalize and end up having a problem.
+
+55
+00:03:26,365 --> 00:03:28,410
+Here's an important clue.
+
+56
+00:03:28,410 --> 00:03:33,735
+Look at this step where we give an answer of negative three, negative five.
+
+57
+00:03:33,735 --> 00:03:35,060
+When we go to generalize,
+
+58
+00:03:35,060 --> 00:03:39,000
+we're going to ask, "Why did we use negative three, negative five?"
+
+59
+00:03:39,000 --> 00:03:41,420
+Then we're going to notice we don't see negative three,
+
+60
+00:03:41,420 --> 00:03:44,560
+negative five anywhere else.
+
+61
+00:03:44,560 --> 00:03:46,910
+The fact that our answer seemingly comes out of
+
+62
+00:03:46,910 --> 00:03:49,875
+nowhere indicates that we're missing something.
+
+63
+00:03:49,875 --> 00:03:55,340
+We did some step without consciously thinking about it and writing it down,
+
+64
+00:03:55,340 --> 00:03:57,895
+and we need to fix that before we go on.
+
+65
+00:03:57,895 --> 00:03:59,600
+We may notice this now,
+
+66
+00:03:59,600 --> 00:04:01,970
+we may notice it when we go to generalize,
+
+67
+00:04:01,970 --> 00:04:04,295
+in which case we need to come back and fix it.
+
+68
+00:04:04,295 --> 00:04:06,680
+Why was it that we picked negative three,
+
+69
+00:04:06,680 --> 00:04:08,780
+negative five as our answer here?
+
+70
+00:04:08,780 --> 00:04:11,240
+Reviewing our last steps,
+
+71
+00:04:11,240 --> 00:04:17,205
+the last remaining dotted line of length 5.66 is what we were keeping track of,
+
+72
+00:04:17,205 --> 00:04:19,490
+our best choice so far.
+
+73
+00:04:19,490 --> 00:04:22,235
+We started at point two, seven,
+
+74
+00:04:22,235 --> 00:04:26,540
+then we went around and updated it each time we found a shorter distance.
+
+75
+00:04:26,540 --> 00:04:28,535
+However, as we wrote our steps,
+
+76
+00:04:28,535 --> 00:04:33,680
+we never mentioned the point that went with the shortest distance so far.
+
+77
+00:04:33,680 --> 00:04:37,515
+We should go back and fix our steps to include that.
+
+78
+00:04:37,515 --> 00:04:40,115
+We start with a best choice of two, seven.
+
+79
+00:04:40,115 --> 00:04:44,840
+When we got to eight, negative two and decided 7.07 was smaller,
+
+80
+00:04:44,840 --> 00:04:48,095
+we updated our closest point to eight, negative two.
+
+81
+00:04:48,095 --> 00:04:49,590
+When we got to negative three,
+
+82
+00:04:49,590 --> 00:04:52,695
+negative five and found that 5.66 was smaller,
+
+83
+00:04:52,695 --> 00:04:56,360
+we updated our best choice to negative three, negative five.
+
+84
+00:04:56,360 --> 00:04:59,345
+Now, this answer at the end makes sense.
+
+85
+00:04:59,345 --> 00:05:03,040
+It is whatever our best choice was last.
+
+86
+00:05:03,040 --> 00:05:04,750
+Now we're ready to generalize,
+
+87
+00:05:04,750 --> 00:05:07,000
+which we'll do in the next video.

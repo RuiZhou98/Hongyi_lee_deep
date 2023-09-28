@@ -1,0 +1,41 @@
+Here we have a struct declaration for
+a rectangle. When you declare a struct,
+the struct tag, in this case rect_tag, identifies the struct's type. But by itself is not a type name. When you want to name the struct type,
+you have to include the struct keyword, like you see here. Many programmers find it tedious to right
+struct everywhere they need to use fixed struct types so they use typedef to define
+a new type name for the struct type. One way to use typedef with our
+rectangle struct is shown here. The typedef keywords says that we
+are going to make a new name for an existing type. The new name in this case rect_t
+comes last in the declaration and the name of the existing
+type comes between them. Notice that here the existing
+type is struct rect_tag. Now we can just use rect_t as a type name. It is an alias or
+another name for struct rect_tag. There are a couple of other ways we
+can do the same thing with typedef. We mention them all so
+that if you see one or the other ways in someone else's code,
+you will not be confused. We can combine the struct declaration and
+typedef into one statement. This follows the same
+rules we just discussed. The new name rect_t goes at
+the end of the typedef statement. And the existing type goes between
+the new name and the typedef keyword. It just happens that here
+the existing type gets declared in the typedef statement. The third option is the same
+as the previous one, except that the struct tag is omitted. This makes a struct with no tag and
+immediately aliases this struct to rect_t. Typedef has uses beyond just structs. Sometimes, we are writing some code
+that deals with RGB values for pixels. In this hypothetical example, we initially
+use unsigned ints to represent the red, green, or blue components of each pixel. But what happens if later we realize that
+it would be better to use an unsigned char since RGB values can only be between 0 and
+255 and we don't want to waste memory. With the way we wrote the code,
+we have to go find every single place that we used unsigned int to
+represent an RGB value and change it. We can't even use the search and
+replace functionality of our editor since there may be other uses of unsigned
+int that do not represent RGB values. So we don't want to change them. Such a change is tedious and error-prone. In fact, one important rule of
+programming is to write code so that if you have to change something,
+you only have to change it in one place. Now suppose we had originally
+written our code this way. Here we used typedef to make
+rgb_t an alias for unsigned int. And then used rgb_t as the type name
+everywhere we needed to talk about an RGB pip value. With this code, if we want to change
+the type we use for RGB values, we can just change the typedef statement
+and everything else will change correctly. As a side benefit,
+this helps the readability of our code. Anyone reading the code can tell
+when a variable, parameter, or return value is an RGB value
+since its type is rgb_t. Typedef can be great to make your code
+easier to modify and easier to read.

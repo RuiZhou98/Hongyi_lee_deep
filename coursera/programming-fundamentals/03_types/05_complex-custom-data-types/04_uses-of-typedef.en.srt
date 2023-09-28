@@ -1,0 +1,247 @@
+1
+00:00:02,762 --> 00:00:06,410
+Here we have a struct declaration for
+a rectangle.
+
+2
+00:00:06,410 --> 00:00:10,900
+When you declare a struct,
+the struct tag, in this case rect_tag,
+
+3
+00:00:10,900 --> 00:00:12,520
+identifies the struct's type.
+
+4
+00:00:12,520 --> 00:00:14,670
+But by itself is not a type name.
+
+5
+00:00:14,670 --> 00:00:18,430
+When you want to name the struct type,
+you have to include the struct keyword,
+
+6
+00:00:18,430 --> 00:00:19,860
+like you see here.
+
+7
+00:00:19,860 --> 00:00:23,760
+Many programmers find it tedious to right
+struct everywhere they need to use fixed
+
+8
+00:00:23,760 --> 00:00:29,140
+struct types so they use typedef to define
+a new type name for the struct type.
+
+9
+00:00:29,140 --> 00:00:32,605
+One way to use typedef with our
+rectangle struct is shown here.
+
+10
+00:00:32,605 --> 00:00:35,490
+The typedef keywords says that we
+are going to make a new name for
+
+11
+00:00:35,490 --> 00:00:36,368
+an existing type.
+
+12
+00:00:36,368 --> 00:00:41,216
+The new name in this case rect_t
+comes last in the declaration and
+
+13
+00:00:41,216 --> 00:00:45,500
+the name of the existing
+type comes between them.
+
+14
+00:00:45,500 --> 00:00:49,780
+Notice that here the existing
+type is struct rect_tag.
+
+15
+00:00:49,780 --> 00:00:51,706
+Now we can just use rect_t as a type name.
+
+16
+00:00:51,706 --> 00:00:55,539
+It is an alias or
+another name for struct rect_tag.
+
+17
+00:00:55,539 --> 00:00:59,910
+There are a couple of other ways we
+can do the same thing with typedef.
+
+18
+00:00:59,910 --> 00:01:02,150
+We mention them all so
+that if you see one or
+
+19
+00:01:02,150 --> 00:01:06,420
+the other ways in someone else's code,
+you will not be confused.
+
+20
+00:01:06,420 --> 00:01:10,760
+We can combine the struct declaration and
+typedef into one statement.
+
+21
+00:01:10,760 --> 00:01:13,700
+This follows the same
+rules we just discussed.
+
+22
+00:01:13,700 --> 00:01:17,370
+The new name rect_t goes at
+the end of the typedef statement.
+
+23
+00:01:17,370 --> 00:01:21,980
+And the existing type goes between
+the new name and the typedef keyword.
+
+24
+00:01:21,980 --> 00:01:25,090
+It just happens that here
+the existing type gets declared
+
+25
+00:01:25,090 --> 00:01:26,070
+in the typedef statement.
+
+26
+00:01:27,460 --> 00:01:30,740
+The third option is the same
+as the previous one,
+
+27
+00:01:30,740 --> 00:01:33,040
+except that the struct tag is omitted.
+
+28
+00:01:33,040 --> 00:01:38,580
+This makes a struct with no tag and
+immediately aliases this struct to rect_t.
+
+29
+00:01:38,580 --> 00:01:41,080
+Typedef has uses beyond just structs.
+
+30
+00:01:41,080 --> 00:01:45,200
+Sometimes, we are writing some code
+that deals with RGB values for pixels.
+
+31
+00:01:45,200 --> 00:01:49,920
+In this hypothetical example, we initially
+use unsigned ints to represent the red,
+
+32
+00:01:49,920 --> 00:01:52,660
+green, or blue components of each pixel.
+
+33
+00:01:52,660 --> 00:01:57,280
+But what happens if later we realize that
+it would be better to use an unsigned char
+
+34
+00:01:57,280 --> 00:02:03,520
+since RGB values can only be between 0 and
+255 and we don't want to waste memory.
+
+35
+00:02:03,520 --> 00:02:06,810
+With the way we wrote the code,
+we have to go find every single
+
+36
+00:02:06,810 --> 00:02:11,870
+place that we used unsigned int to
+represent an RGB value and change it.
+
+37
+00:02:11,870 --> 00:02:15,730
+We can't even use the search and
+replace functionality of our editor
+
+38
+00:02:15,730 --> 00:02:20,410
+since there may be other uses of unsigned
+int that do not represent RGB values.
+
+39
+00:02:20,410 --> 00:02:22,520
+So we don't want to change them.
+
+40
+00:02:22,520 --> 00:02:25,220
+Such a change is tedious and error-prone.
+
+41
+00:02:25,220 --> 00:02:28,620
+In fact, one important rule of
+programming is to write code so
+
+42
+00:02:28,620 --> 00:02:32,170
+that if you have to change something,
+you only have to change it in one place.
+
+43
+00:02:33,190 --> 00:02:35,810
+Now suppose we had originally
+written our code this way.
+
+44
+00:02:36,920 --> 00:02:41,240
+Here we used typedef to make
+rgb_t an alias for unsigned int.
+
+45
+00:02:41,240 --> 00:02:45,640
+And then used rgb_t as the type name
+everywhere we needed to talk about an RGB
+
+46
+00:02:45,640 --> 00:02:47,130
+pip value.
+
+47
+00:02:47,130 --> 00:02:51,410
+With this code, if we want to change
+the type we use for RGB values,
+
+48
+00:02:51,410 --> 00:02:56,290
+we can just change the typedef statement
+and everything else will change correctly.
+
+49
+00:02:56,290 --> 00:02:59,880
+As a side benefit,
+this helps the readability of our code.
+
+50
+00:02:59,880 --> 00:03:03,010
+Anyone reading the code can tell
+when a variable, parameter, or
+
+51
+00:03:03,010 --> 00:03:07,820
+return value is an RGB value
+since its type is rgb_t.
+
+52
+00:03:07,820 --> 00:03:11,800
+Typedef can be great to make your code
+easier to modify and easier to read.

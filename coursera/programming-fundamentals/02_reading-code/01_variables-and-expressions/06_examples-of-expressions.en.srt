@@ -1,0 +1,141 @@
+1
+00:00:03,143 --> 00:00:07,710
+Now that you know a little bit more about
+expressions, let's see them in action.
+
+2
+00:00:07,710 --> 00:00:11,900
+This code example starts with a
+declaration of an integer variable called
+
+3
+00:00:11,900 --> 00:00:15,770
+x, which behaves exactly
+as you already have seen.
+
+4
+00:00:15,770 --> 00:00:20,258
+Next we initialize x to 4 + 3 * 2.
+
+5
+00:00:20,258 --> 00:00:24,030
+As you know from math,
+times has higher precedence than plus.
+
+6
+00:00:24,030 --> 00:00:27,780
+So this expression evaluates
+to 4 + 6 which is 10.
+
+7
+00:00:27,780 --> 00:00:31,448
+So we put 10 in the box for x.
+
+8
+00:00:31,448 --> 00:00:36,668
+Next, we declare another variable,
+y, of type int and
+
+9
+00:00:36,668 --> 00:00:41,676
+initialize it to x- 6
+which is 10- 6 which is 4.
+
+10
+00:00:41,676 --> 00:00:45,170
+So we create a box for y and put 4 in it.
+
+11
+00:00:45,170 --> 00:00:49,010
+The last statement says x = x * y.
+
+12
+00:00:49,010 --> 00:00:53,160
+Sometimes novice programmers expect
+statements which look like this to behave
+
+13
+00:00:53,160 --> 00:00:57,010
+like algebraic equations,
+where you might solve for x.
+
+14
+00:00:57,010 --> 00:00:59,190
+However, that is not what happens.
+
+15
+00:00:59,190 --> 00:01:02,390
+Instead you follow the rules
+you have already learned.
+
+16
+00:01:02,390 --> 00:01:06,500
+The right hand side evaluates to 10 * 4,
+which is 40, and
+
+17
+00:01:06,500 --> 00:01:09,460
+you put 40 in the box for x.
+
+18
+00:01:11,390 --> 00:01:16,010
+Now let's see another example, before we
+work through this, take a moment to see if
+
+19
+00:01:16,010 --> 00:01:21,840
+you can figure out what the values x y and
+z have at the end of this code fragment.
+
+20
+00:01:23,940 --> 00:01:29,063
+Okay let's step through it,
+first we declare and initialize x.
+
+21
+00:01:29,063 --> 00:01:36,330
+Next we evaluate x times 3, which is 6,
+and initialize y to that value.
+
+22
+00:01:36,330 --> 00:01:43,230
+Next we compute y divided by 2 which
+is 3 and initialize z to that value.
+
+23
+00:01:43,230 --> 00:01:47,756
+The last statement says
+x equals 2 plus z mod 2.
+
+24
+00:01:47,756 --> 00:01:53,281
+Since the 2 + z is in parenthesis,
+we compute that first and get 5.
+
+25
+00:01:53,281 --> 00:01:58,164
+Next we compute 5 mod 2,
+remember from your reading that 5
+
+26
+00:01:58,164 --> 00:02:02,854
+mod 2 means that we divide 5 by 2 but
+take the remainder,
+
+27
+00:02:02,854 --> 00:02:07,391
+not the quotient, so
+this expression evaluates to 1.
+
+28
+00:02:07,391 --> 00:02:10,810
+So we update the value in x's box to be 1.
+
+29
+00:02:10,810 --> 00:02:15,526
+Okay great, now you should be able to
+evaluate code involving a wide variety of
+
+30
+00:02:15,526 --> 00:02:17,319
+mathematical expressions.

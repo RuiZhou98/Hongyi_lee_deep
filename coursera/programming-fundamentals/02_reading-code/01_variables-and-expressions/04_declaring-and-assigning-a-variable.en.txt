@@ -1,0 +1,27 @@
+[BLANK AUDIO]. We are going to start learning to execute
+code with the most basic statements in C and build up to more complex
+statements from there. Here we have two variable declarations,
+one for int called x followed by one for
+int called y. If we execute first statement,
+we will create a box labeled x. The variable x is uninitialized, so we will place a question mark
+in the box for its value. If we execute the second statement, we will create another box labeled
+y which is also uninitialized. Uninitialized variables are bad, as they lead to bugs in your code
+which may be hard to find and fix. Now let's look at another example
+which initializes the variables. Here, the first statement
+declares an int called x. Executing it behaves exactly as before. We have made a box for x,
+which has an unknown value in it. However, the next line
+of code assigns 4 to x. Executing this line puts
+a 4 in the box for x. Now x is initialized and
+we know that it has the value 4. The next line shows the declaration and initialization combined
+in a single statement. Executing it both creates a box for
+y and puts the value 6 in that box. Of course, variables are only useful if
+you make use of the values that they have. Here, the code first declares x and
+initializes it to a 4. Let us execute that statement. Next, it declares y and
+initializes it to x + 2. To perform this statement, we must
+evaluate the expression on the right-hand side of the equal sign,
+x is 4, so x + 2 is 6. We create a box for y and put a 6 in it. The last statement creates a variable
+z and initializes it to y- x. As you might expect, you would take
+the value of y, which is 6 and the value of x which is 4 and
+subtract them to get 2. You would then create a box for
+z and initialize it to 2. Great, now you know how to execute
+code with variable declarations and assignment statements.

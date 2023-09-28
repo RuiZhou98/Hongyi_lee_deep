@@ -1,0 +1,331 @@
+1
+00:00:02,390 --> 00:00:06,525
+Let us briefly take a look at an example algorithm,
+
+2
+00:00:06,525 --> 00:00:09,405
+and how you might follow its steps yourself.
+
+3
+00:00:09,405 --> 00:00:12,635
+We don't need to know anything about programming to do these steps,
+
+4
+00:00:12,635 --> 00:00:14,685
+we just need to be able to do some math,
+
+5
+00:00:14,685 --> 00:00:17,280
+and keep careful track of what we're doing.
+
+6
+00:00:17,280 --> 00:00:20,670
+This algorithm does not accomplish a really useful task,
+
+7
+00:00:20,670 --> 00:00:23,430
+but gives us a simple example to start from.
+
+8
+00:00:23,430 --> 00:00:28,170
+The algorithm says, "Given a non-negative integer N," so it is
+
+9
+00:00:28,170 --> 00:00:33,495
+parameterized over N. We need a value of N to actually do these steps,
+
+10
+00:00:33,495 --> 00:00:36,380
+so let's pick N equals two.
+
+11
+00:00:36,380 --> 00:00:41,040
+We're also going to want a place to write down the output that the algorithm produces,
+
+12
+00:00:41,040 --> 00:00:43,740
+that is, everything that we are told to write down,
+
+13
+00:00:43,740 --> 00:00:47,025
+we will write in this output box.
+
+14
+00:00:47,025 --> 00:00:49,320
+We need to keep track of where we are,
+
+15
+00:00:49,320 --> 00:00:54,390
+so we are going to use this green arrow to remember what step we are currently on.
+
+16
+00:00:54,390 --> 00:00:56,130
+We'll start at the start.
+
+17
+00:00:56,130 --> 00:01:00,480
+The step right after the arrow says to make a variable called X,
+
+18
+00:01:00,480 --> 00:01:02,840
+and set it equaled to N plus two.
+
+19
+00:01:02,840 --> 00:01:05,830
+N is two, and two plus two is four,
+
+20
+00:01:05,830 --> 00:01:08,925
+so we want to note that X is initially four.
+
+21
+00:01:08,925 --> 00:01:12,120
+Our next step calls for us to count from zero to
+
+22
+00:01:12,120 --> 00:01:15,885
+N. We will want to give a name to the number we are counting,
+
+23
+00:01:15,885 --> 00:01:18,750
+so that we can use it in our other steps.
+
+24
+00:01:18,750 --> 00:01:21,165
+Here, we decided to call it i.
+
+25
+00:01:21,165 --> 00:01:24,390
+As we count, we are going to repeat steps.
+
+26
+00:01:24,390 --> 00:01:26,625
+We've used indentation here to indicate
+
+27
+00:01:26,625 --> 00:01:29,340
+which steps are repeated for each number we count,
+
+28
+00:01:29,340 --> 00:01:34,065
+as well as explicitly noting in the step after that you do it,
+
+29
+00:01:34,065 --> 00:01:36,075
+when you finish counting.
+
+30
+00:01:36,075 --> 00:01:38,785
+We'll start with i being zero,
+
+31
+00:01:38,785 --> 00:01:41,650
+since that is the first number we said to count.
+
+32
+00:01:41,650 --> 00:01:44,760
+Our next step says to write down X times i.
+
+33
+00:01:44,760 --> 00:01:47,610
+Four times zero is zero,
+
+34
+00:01:47,610 --> 00:01:49,500
+so we write down zero.
+
+35
+00:01:49,500 --> 00:01:53,400
+Our next step says for us to update the value of X.
+
+36
+00:01:53,400 --> 00:01:55,115
+What is its new value?
+
+37
+00:01:55,115 --> 00:01:59,120
+Four plus zero times two is four,
+
+38
+00:01:59,120 --> 00:02:01,870
+so, we would update it to be four.
+
+39
+00:02:01,870 --> 00:02:04,065
+It's already four, which is fine,
+
+40
+00:02:04,065 --> 00:02:06,300
+we just keep its value as four.
+
+41
+00:02:06,300 --> 00:02:10,620
+Now, we have reached the end of the steps that we said to do as we count.
+
+42
+00:02:10,620 --> 00:02:13,590
+We need to go back and count the next number,
+
+43
+00:02:13,590 --> 00:02:17,850
+so we move our arrow back to the top of the step we were doing for each number,
+
+44
+00:02:17,850 --> 00:02:20,825
+and make i the next number we would count,
+
+45
+00:02:20,825 --> 00:02:22,845
+in this case, one.
+
+46
+00:02:22,845 --> 00:02:27,180
+Now, we begin doing these steps again with i having the value one.
+
+47
+00:02:27,180 --> 00:02:29,580
+What is X times i now?
+
+48
+00:02:29,580 --> 00:02:31,795
+Four times one is four,
+
+49
+00:02:31,795 --> 00:02:34,860
+so we write down the number four in our output.
+
+50
+00:02:34,860 --> 00:02:38,175
+Next, we are going to update X again, this time,
+
+51
+00:02:38,175 --> 00:02:41,670
+X plus i times N evaluates to six,
+
+52
+00:02:41,670 --> 00:02:45,630
+so we are going to change the value of X from four to six.
+
+53
+00:02:45,630 --> 00:02:48,315
+We've again reached the end of our repeated steps,
+
+54
+00:02:48,315 --> 00:02:51,090
+so we need to count our next number.
+
+55
+00:02:51,090 --> 00:02:52,620
+We'd go back to the top,
+
+56
+00:02:52,620 --> 00:02:55,385
+and then count our next value which is two,
+
+57
+00:02:55,385 --> 00:02:57,845
+and make that the value of i.
+
+58
+00:02:57,845 --> 00:02:59,985
+We said to count from zero to N,
+
+59
+00:02:59,985 --> 00:03:02,965
+and N is two, so are we done counting?
+
+60
+00:03:02,965 --> 00:03:06,180
+In these steps, we said to include both ends,
+
+61
+00:03:06,180 --> 00:03:09,510
+so we're going to do these steps when i has the value two.
+
+62
+00:03:09,510 --> 00:03:13,290
+So, we go in and do the repeated steps one more time.
+
+63
+00:03:13,290 --> 00:03:16,620
+Now, X times i has the value 12,
+
+64
+00:03:16,620 --> 00:03:20,570
+so we write down 12 in our output and we go to the next step.
+
+65
+00:03:20,570 --> 00:03:23,640
+Our next step says to update the value of X again,
+
+66
+00:03:23,640 --> 00:03:26,535
+evaluating X plus i times N,
+
+67
+00:03:26,535 --> 00:03:28,215
+we get 10 this time,
+
+68
+00:03:28,215 --> 00:03:30,975
+so we update the value of X to be 10,
+
+69
+00:03:30,975 --> 00:03:33,615
+and move past that step.
+
+70
+00:03:33,615 --> 00:03:38,235
+Once more, we've reached the end of the steps we want to repeat as we count,
+
+71
+00:03:38,235 --> 00:03:41,365
+so we return to the step where we said to count.
+
+72
+00:03:41,365 --> 00:03:42,810
+When we return here,
+
+73
+00:03:42,810 --> 00:03:45,570
+we look at our steps and realize that we've already
+
+74
+00:03:45,570 --> 00:03:48,465
+counted all of the numbers we were supposed to,
+
+75
+00:03:48,465 --> 00:03:50,270
+zero, one and two.
+
+76
+00:03:50,270 --> 00:03:52,060
+So, we're done counting.
+
+77
+00:03:52,060 --> 00:03:56,390
+Now, we want to go to the steps after we finish counting and do them.
+
+78
+00:03:56,390 --> 00:04:01,670
+This one says to write down the value of X. X currently has value 10,
+
+79
+00:04:01,670 --> 00:04:03,810
+so we write that in our output.
+
+80
+00:04:03,810 --> 00:04:06,210
+Now, our arrow is at the end of our steps.
+
+81
+00:04:06,210 --> 00:04:09,255
+There's nothing left to do, so we're done.
+
+82
+00:04:09,255 --> 00:04:14,985
+Zero, four, 12, 10 is the sequence of numbers that this algorithm wanted us to generate,
+
+83
+00:04:14,985 --> 00:04:19,650
+for N equals two which we see in our output box.

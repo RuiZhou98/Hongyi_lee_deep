@@ -1,0 +1,110 @@
+<meta charset="utf-8"/>
+<co-content>
+ <h2 level="2">
+  Variables
+ </h2>
+ <p>
+  Programs track most of their state in
+  <em>
+   variables
+  </em>
+  —you can think of a variable as a box that stores a value.  In order to use a variable, the programmer must declare it, specifying its type and name.  The type specifies what kind of value can be held in a variable's box (for example, whether it is a number, a letter, or text).  We will learn about types in the next module, but for now, we will use variables whose types are all
+  <strong>
+   int
+  </strong>
+  —meaning that the value in their box is a number.
+ </p>
+ <h3 level="3">
+  Declaration
+ </h3>
+ <p>
+  The name of a variable may be any valid
+  <em>
+   identifier
+  </em>
+  .  An identifier is the formal programming term for a word that can be used to name something. In C, identifiers may be any length, and can contain letters, numbers, and underscores (_).  They may only start with a letter or an underscore (not a number), and are case-sensitive (meaning that
+  <strong>
+   abc
+  </strong>
+  is different from
+  <strong>
+   Abc
+  </strong>
+  and
+  <strong>
+   ABC
+  </strong>
+  is different from both of them). The variable declaration ends with a semicolon—which is used to end many
+  <em>
+   statements
+  </em>
+  in C.  A statement in a programming language is roughly analogous to a sentence in English—it is a complete line of code, which can be executed for an effect. This figure shows a variable declaration and identifies each of the pieces:
+ </p>
+ <img alt="" assetid="F6TbS33XEeef4BI7KaessA" src="data:image/png;base64,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"/>
+ <p>
+  When executing code by hand, the effect of a variable declaration is to create a new box, labeled with the name of the variable.  In C, a newly declared variable is
+  <em>
+   uninitialized
+  </em>
+  , meaning that its value is undefined.  When the computer actually executes the program, it has a finite (but quite large) number of "boxes" (memory locations), and the variable will be given one that is currently not in use.  The value of the variable will be whatever value happened to be in the location previously, until a new value is assigned to the variable (which we will see shortly).  Correspondingly, when we execute a variable declaration by hand, we will draw a box and place a (?) in it for its value—indicating that it is unknown.  If we ever use an unknown value as we execute our program, it indicates a problem with our program, since its behavior is undefined—its behavior will be changed based on whatever the value actually is, which we cannot predict.
+ </p>
+ <p>
+  The next video shows the execution of code containing two variable declarations—
+  <strong>
+   x
+  </strong>
+  and
+  <strong>
+   y
+  </strong>
+  .  At the start, the execution arrow is at the beginning of the code.  The area on the right—which represents the state of the program—is empty.  As the execution arrow advances across these statements, we execute their effects: drawing a box for each variable, with a (?) in it, indicating that the variable is uninitialized.
+ </p>
+</co-content>
+<style>
+ body {
+    padding: 50px 85px 50px 85px;
+}
+
+table th, table td {
+    border: 1px solid #e0e0e0;
+    padding: 5px 20px;
+    text-align: left;
+}
+input {
+    margin: 10px;
+}
+}
+th {
+    font-weight: bold;
+}
+td, th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+pre {
+    display: block;
+    margin: 20px;
+    background: #424242;
+    color: #fff;
+    font-size: 13px;
+    white-space: pre-wrap;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    border: 1px solid #ccc;
+}
+</style>
+<script async="" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$$','$$'], ['$','$'] ],
+      displayMath: [ ["\\[","\\]"] ],
+      processEscapes: true
+    }
+  });
+</script>

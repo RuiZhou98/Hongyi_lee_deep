@@ -1,0 +1,171 @@
+1
+00:00:02,510 --> 00:00:07,275
+You've learned a lot about thinking through algorithms with the seven steps,
+
+2
+00:00:07,275 --> 00:00:10,050
+the syntax and semantics of C and that
+
+3
+00:00:10,050 --> 00:00:13,088
+everything is a number principle and how it relates to types.
+
+4
+00:00:13,088 --> 00:00:15,420
+We're going to take a moment to underscore
+
+5
+00:00:15,420 --> 00:00:18,680
+the importance of being specific when you write an algorithm.
+
+6
+00:00:18,680 --> 00:00:23,160
+Humans can usually figure out vague instructions because they have common sense.
+
+7
+00:00:23,160 --> 00:00:28,560
+However, computers do not have common sense and only do exactly what you tell them to.
+
+8
+00:00:28,560 --> 00:00:30,115
+When you write an algorithm,
+
+9
+00:00:30,115 --> 00:00:32,580
+you have to carefully think through exactly what to
+
+10
+00:00:32,580 --> 00:00:35,805
+do and be very specific as you write it down.
+
+11
+00:00:35,805 --> 00:00:40,350
+In the next course, we'll delve into turning your algorithm into code as well as
+
+12
+00:00:40,350 --> 00:00:42,540
+compiling and running the code and
+
+13
+00:00:42,540 --> 00:00:45,550
+testing the code to be more confident that it's correct,
+
+14
+00:00:45,550 --> 00:00:49,040
+then debugging it when something goes wrong.
+
+15
+00:00:49,040 --> 00:00:50,760
+However, before we get there,
+
+16
+00:00:50,760 --> 00:00:54,210
+we're going to wrap up this course with you writing an algorithm in
+
+17
+00:00:54,210 --> 00:00:58,670
+English and having one of your fellow Coursera learners execute the algorithm.
+
+18
+00:00:58,670 --> 00:01:04,035
+Of course you will also execute someone else's algorithm and peer review their work.
+
+19
+00:01:04,035 --> 00:01:07,105
+You want to be specific and clear when you do this so that
+
+20
+00:01:07,105 --> 00:01:10,650
+whoever executes your algorithm knows exactly what to do.
+
+21
+00:01:10,650 --> 00:01:13,590
+To underscore the importance of being precise,
+
+22
+00:01:13,590 --> 00:01:16,830
+we're going to have a fun little demonstration of a vague algorithm.
+
+23
+00:01:16,830 --> 00:01:19,800
+Genevieve wrote me an algorithm to make a peanut butter and
+
+24
+00:01:19,800 --> 00:01:23,010
+jelly sandwich and I've forgotten all of my common sense.
+
+25
+00:01:23,010 --> 00:01:25,853
+So, I'm only willing to do exactly what she said.
+
+26
+00:01:25,853 --> 00:01:27,030
+All right, Genevieve.
+
+27
+00:01:27,030 --> 00:01:28,740
+This is pretty basic.
+
+28
+00:01:28,740 --> 00:01:30,330
+I can't imagine what could go wrong.
+
+29
+00:01:30,330 --> 00:01:30,794
+Okay.
+
+30
+00:01:30,794 --> 00:01:34,450
+One, get out one piece of bread.
+
+31
+00:01:34,450 --> 00:01:36,900
+Okay, that seems hard to screw up.
+
+32
+00:01:36,900 --> 00:01:40,870
+So far so good. Two, use a knife to put the peanut butter on it.
+
+33
+00:01:40,870 --> 00:01:44,445
+Okay.
+
+34
+00:01:44,445 --> 00:01:48,565
+This is trickier than you think.
+
+35
+00:01:48,565 --> 00:01:52,820
+I never knew that making a peanut butter sandwich was so difficult. All right.
+
+36
+00:01:52,820 --> 00:01:55,310
+Three, get out another piece of bread.
+
+37
+00:01:55,310 --> 00:01:55,980
+Okay.
+
+38
+00:01:55,980 --> 00:02:01,270
+Four, use the knife to put the jelly on.
+
+39
+00:02:01,270 --> 00:02:03,545
+Okay, she didn't really tell me where to put the jelly on.
+
+40
+00:02:03,545 --> 00:02:07,490
+But I guess if someone told me to like put my clothes on they mean to wear them.
+
+41
+00:02:07,490 --> 00:02:13,500
+So, maybe she wants me to like wear that jelly. Yeah okay.
+
+42
+00:02:13,500 --> 00:02:16,770
+Five, put the two pieces of bread together.
+
+43
+00:02:16,770 --> 00:02:22,950
+All right, do you want me to bite the sandwich?

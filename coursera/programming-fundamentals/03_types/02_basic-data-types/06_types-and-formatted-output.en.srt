@@ -1,0 +1,291 @@
+1
+00:00:02,320 --> 00:00:07,040
+In this video, we are going to execute some calls to printf using
+
+2
+00:00:07,040 --> 00:00:11,465
+a variety of format specifiers so you can see how to print types other than int.
+
+3
+00:00:11,465 --> 00:00:16,595
+First, we initialize a char letter to be G and int negNumber to be -1,
+
+4
+00:00:16,595 --> 00:00:19,835
+and an unsigned int age to be 33.
+
+5
+00:00:19,835 --> 00:00:21,435
+Next, we come to a print statement.
+
+6
+00:00:21,435 --> 00:00:24,380
+Printf will look for any format specifiers and in this case,
+
+7
+00:00:24,380 --> 00:00:29,135
+it has a %c telling printf to look at the next argument and format it as a character.
+
+8
+00:00:29,135 --> 00:00:32,610
+It prints, my name begins with G. The next statement has
+
+9
+00:00:32,610 --> 00:00:37,945
+the familiar %d and we've seen before that it will print negNumber as a decimal integer.
+
+10
+00:00:37,945 --> 00:00:41,594
+The next statement prints the value of age as a decimal integer,
+
+11
+00:00:41,594 --> 00:00:43,100
+but the next statement uses
+
+12
+00:00:43,100 --> 00:00:49,805
+the %o format specifier telling printf to print the value of age in octal or base eight.
+
+13
+00:00:49,805 --> 00:00:53,270
+The final statement has a %x telling printf to
+
+14
+00:00:53,270 --> 00:00:57,570
+print the value of age as a hexadecimal or base 16 integer.
+
+15
+00:00:57,570 --> 00:01:00,410
+What if we change things around a bit and use
+
+16
+00:01:00,410 --> 00:01:04,820
+format specifiers that seems strange for the types of data we are passing it?
+
+17
+00:01:04,820 --> 00:01:07,733
+We start the same way,
+
+18
+00:01:07,733 --> 00:01:13,140
+but now our print statement uses %d to format letter. What will happen?
+
+19
+00:01:13,140 --> 00:01:15,355
+Well, remember that everything is a number.
+
+20
+00:01:15,355 --> 00:01:19,240
+Letter actually has a numerical value which is 71.
+
+21
+00:01:19,240 --> 00:01:21,985
+This numerical value is what actually gets passed to printf.
+
+22
+00:01:21,985 --> 00:01:25,150
+Printf has no idea that the 71 value
+
+23
+00:01:25,150 --> 00:01:28,965
+it receives is originally from a char so it just prints 71.
+
+24
+00:01:28,965 --> 00:01:33,320
+Next, we print negNumber which is -1 as a hexadecimal number.
+
+25
+00:01:33,320 --> 00:01:37,495
+If you work out how negative one is represented with a 32-bit signed integer,
+
+26
+00:01:37,495 --> 00:01:42,710
+you will find the hex value is ffffffff.
+
+27
+00:01:42,710 --> 00:01:47,100
+Our next statement uses %u which formats an integer as an unsigned decimal number.
+
+28
+00:01:47,100 --> 00:01:48,763
+But we are passing in negNumber,
+
+29
+00:01:48,763 --> 00:01:49,910
+so what will happen?
+
+30
+00:01:49,910 --> 00:01:52,990
+Remember that everything is just a bunch of bits to the computer.
+
+31
+00:01:52,990 --> 00:01:55,945
+If you take the binary representation of -1,
+
+32
+00:01:55,945 --> 00:01:57,415
+which is 32 ones,
+
+33
+00:01:57,415 --> 00:02:00,505
+and interpret it as an unsigned 32-bit integer,
+
+34
+00:02:00,505 --> 00:02:03,940
+you get the largest possible 32-bit unsigned integer,
+
+35
+00:02:03,940 --> 00:02:06,025
+which is about 4.2 billion.
+
+36
+00:02:06,025 --> 00:02:11,380
+Our last print statement uses %c to format the integer age. What happens here?
+
+37
+00:02:11,380 --> 00:02:13,380
+Well again, everything is just a number,
+
+38
+00:02:13,380 --> 00:02:17,770
+so printf will print out the character whose numeric representation is 33,
+
+39
+00:02:17,770 --> 00:02:20,910
+which is the exclamation mark character.
+
+40
+00:02:20,910 --> 00:02:24,425
+What if we work with floating point numbers instead?
+
+41
+00:02:24,425 --> 00:02:28,285
+Here are some more printf calls that use floats and doubles.
+
+42
+00:02:28,285 --> 00:02:30,284
+p1 is a float,
+
+43
+00:02:30,284 --> 00:02:35,425
+3.141592, and p2 is a double that contains more digits of pi.
+
+44
+00:02:35,425 --> 00:02:37,150
+The first call to printf uses
+
+45
+00:02:37,150 --> 00:02:41,720
+the %f format specifier to print p1 as a floating point number.
+
+46
+00:02:41,720 --> 00:02:43,098
+The next call has a %e,
+
+47
+00:02:43,098 --> 00:02:46,780
+which means print p1 in scientific notation.
+
+48
+00:02:46,780 --> 00:02:51,545
+Note the e+00, which means times ten to the zeroth power or times one.
+
+49
+00:02:51,545 --> 00:02:54,175
+If we were to print 100 pi using scientific notation,
+
+50
+00:02:54,175 --> 00:02:58,270
+we would get e+02 for times 10 to the second power.
+
+51
+00:02:58,270 --> 00:03:01,285
+Next, we have the format specifier %.10f.
+
+52
+00:03:01,285 --> 00:03:05,410
+The .10 between the percent and the f means to print 10 decimal places.
+
+53
+00:03:05,410 --> 00:03:08,265
+When we do this, we get a slightly odd answer.
+
+54
+00:03:08,265 --> 00:03:10,870
+Where did this 0258 come from?
+
+55
+00:03:10,870 --> 00:03:13,480
+This comes from the fact that floating point numbers
+
+56
+00:03:13,480 --> 00:03:16,650
+can't represent every possible number precisely.
+
+57
+00:03:16,650 --> 00:03:20,590
+C rounded 3.141592 to
+
+58
+00:03:20,590 --> 00:03:23,065
+the nearest representable floating point number
+
+59
+00:03:23,065 --> 00:03:26,335
+when it performed the initialization of p1.
+
+60
+00:03:26,335 --> 00:03:29,455
+When we print p1, it converts that number
+
+61
+00:03:29,455 --> 00:03:33,230
+which is actually stored in p1 to a decimal representation.
+
+62
+00:03:33,230 --> 00:03:34,435
+If that is confusing,
+
+63
+00:03:34,435 --> 00:03:37,565
+it is okay for now since we will not do much with floating point.
+
+64
+00:03:37,565 --> 00:03:40,615
+But if you find yourself writing real programs with floating point,
+
+65
+00:03:40,615 --> 00:03:46,000
+you need to understand how all of this works to avoid subtle and dangerous problems.
+
+66
+00:03:46,000 --> 00:03:49,750
+Next, we print p2 with the default formatting for a double,
+
+67
+00:03:49,750 --> 00:03:52,403
+which prints six digits after the decimal,
+
+68
+00:03:52,403 --> 00:03:54,380
+rounding the last one.
+
+69
+00:03:54,380 --> 00:03:58,030
+Our next printf prints p2 with 10 digits after the decimal.
+
+70
+00:03:58,030 --> 00:04:00,065
+Here, they are all what we expect.
+
+71
+00:04:00,065 --> 00:04:01,590
+Why is this different?
+
+72
+00:04:01,590 --> 00:04:05,320
+Doubles can represent more numbers more precisely than floats can,
+
+73
+00:04:05,320 --> 00:04:10,730
+so the inaccuracies of representing this number do not appear in these 10 digits.

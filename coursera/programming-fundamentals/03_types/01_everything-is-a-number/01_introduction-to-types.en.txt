@@ -1,0 +1,11 @@
+At this point, you've seen a lot of C
+syntax and learned the semantics of it, how to execute it by hand. So far, the only type you have
+seen is int, as in int x = 3. You're probably wondering about types and what exactly int means, or for
+that matter, what exactly a type is. In the upcoming lesson, you're going to
+learn the answers to these questions and many other things about types. All of this is going to build on one
+key principle of computer science, everything is a number. Computers can only operate on numbers, so all data has to be
+represented numerically. Types tell the computer how to interpret
+and operate on the numeric representation. As you progress through this lesson, you will learn about other
+built-in types besides int. You will also learn about implicit type
+conversions and explicit type casting. As well as how to make your
+own types to represent whatever data you need to work with

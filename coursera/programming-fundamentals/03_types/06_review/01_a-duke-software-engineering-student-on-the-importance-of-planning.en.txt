@@ -1,0 +1,47 @@
+My name is Ivy. I study at the Duke University
+for the MEng program, aka Master of
+Engineering program, and I'm studying Electrical
+and Computer Engineering. Is a really awesome
+experience to be a student in this university
+and in this program, and I learn a lot here. For some new programmer, people may think
+that programming is totally magic but
+actually is not. Everything is following the logic and have to make sense in
+the programming world. So first, you need to trust the logic rather than
+just think random things. Then also for the programming, planning is something that you have to really take
+into consideration. So rather than just put
+some random things and pretending you're working
+in front of a screen, and typing things
+on the keyboard, you actually need to
+first make plans, draw pictures, and seriously think about what you need to do. Then puts things implemented actually in
+the programming world. Also, in Duke
+University especially, the professor and
+all their courses is very well planned and designed. So trust all the course project you have to do and
+do it step-by-step, you'll finally be
+a awesome programmer. There's tons of project I've finished in the whole program. One thing I really
+wanted to talk about is the UPS and Amazon project. I've done in the
+server-less software class. So basically what's
+happening is that one team need to in-charge
+of the UPS system, and another team need to be in charge of the Amazon system. We need to design the protocol altogether to make
+everything work. This project is very
+special for me because it actually mimics what is
+happening in the industry life. Because in industry
+there's no way you can finish your whole system by
+yourself or even by one team. So what is very important is that you
+need to learn how to communicate with other team and design their protocol altogether. So during the whole
+developing process, we actually need to change
+our protocol step-by-step, and finally, get to
+the perfect one. The process is
+a little bit of painful, but finally we'll put
+everything together and find the whole system
+work perfectly. It's really good and inside
+peaceful and happiness. For those students who are struggling in finding
+a job or an interview, I totally understand what
+you're feeling right now. I know it is hard, but trust me you'll be flying. I think for the most important
+things about finding a job is not about how can
+I pass this interview, but how can I be
+a great software engineer. To achieve that goal all
+you need is to practice, practice, and practice following
+all the cross project, and all the advice from all of those professors because
+they have their experience, and they know what
+the industry world need. Once you get more
+and more comfortable to work as a software engineer, the job will just come in to you.

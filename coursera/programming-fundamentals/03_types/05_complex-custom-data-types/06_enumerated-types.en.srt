@@ -1,0 +1,247 @@
+1
+00:00:02,680 --> 00:00:08,000
+Now we're going to show you how to define and use your own enumerated type.
+
+2
+00:00:08,000 --> 00:00:09,610
+At the top of the screen,
+
+3
+00:00:09,610 --> 00:00:13,820
+we take a color coded threat level of a standard security system,
+
+4
+00:00:13,820 --> 00:00:16,850
+and encoded into an enumerated type.
+
+5
+00:00:16,850 --> 00:00:18,680
+There are five possible levels.
+
+6
+00:00:18,680 --> 00:00:23,420
+Low, guarded, elevated, high, and severe.
+
+7
+00:00:23,420 --> 00:00:28,340
+We can refer to these levels using exactly these words throughout our code.
+
+8
+00:00:28,340 --> 00:00:32,860
+Next, there are two helper functions whose definitions we will show you later.
+
+9
+00:00:32,860 --> 00:00:35,455
+The first function is printThreat,
+
+10
+00:00:35,455 --> 00:00:39,855
+which prints the string associated with the particular enumerated type.
+
+11
+00:00:39,855 --> 00:00:42,095
+The second function is printShoes,
+
+12
+00:00:42,095 --> 00:00:44,630
+which prints whether a person is required to take
+
+13
+00:00:44,630 --> 00:00:48,130
+off their shoes given the current threat level.
+
+14
+00:00:48,130 --> 00:00:50,948
+Our main, initializes a threat level,
+
+15
+00:00:50,948 --> 00:00:55,365
+prints it out and then calls these two helper functions.
+
+16
+00:00:55,365 --> 00:00:57,995
+Let's take a closer look at our enumerated type.
+
+17
+00:00:57,995 --> 00:01:03,520
+C creates a correspondence between each of these words and an integer value.
+
+18
+00:01:03,520 --> 00:01:05,645
+So low has the value 0,
+
+19
+00:01:05,645 --> 00:01:08,575
+and severe has the value 4.
+
+20
+00:01:08,575 --> 00:01:11,300
+Notice how the function printThreat can refer to
+
+21
+00:01:11,300 --> 00:01:14,930
+these levels using exactly these words throughout its definition,
+
+22
+00:01:14,930 --> 00:01:17,675
+making the code much easier to read,
+
+23
+00:01:17,675 --> 00:01:21,370
+printShoes does this as well.
+
+24
+00:01:21,370 --> 00:01:28,680
+Inside the main, we declare a new variable of type threat level T called, myThreat.
+
+25
+00:01:28,680 --> 00:01:30,780
+We initialize this variable to the enum,
+
+26
+00:01:30,780 --> 00:01:33,645
+HIGH, which has the integer value 3.
+
+27
+00:01:33,645 --> 00:01:36,285
+In order to print out the current threat level,
+
+28
+00:01:36,285 --> 00:01:38,720
+we call the function, printThreat.
+
+29
+00:01:38,720 --> 00:01:42,360
+We create a stack frame for printThreat in which the argument,
+
+30
+00:01:42,360 --> 00:01:45,810
+myThreat, will be referred to as threat.
+
+31
+00:01:45,810 --> 00:01:49,725
+We mark the call site location and step into print threat.
+
+32
+00:01:49,725 --> 00:01:53,280
+Inside print threat, there is a switch statement which checks
+
+33
+00:01:53,280 --> 00:01:57,015
+the value of the threat and jumps to the corresponding case.
+
+34
+00:01:57,015 --> 00:01:59,730
+Here, we're jumping to case HIGH.
+
+35
+00:01:59,730 --> 00:02:01,570
+Inside of this case,
+
+36
+00:02:01,570 --> 00:02:08,250
+we print Orange/High, and the break exits us from the switch statement.
+
+37
+00:02:08,250 --> 00:02:11,830
+Now we return to the function that called printThreat, which is our main.
+
+38
+00:02:11,830 --> 00:02:16,235
+Upon returning, the stack frame for printThreat is destroyed.
+
+39
+00:02:16,235 --> 00:02:18,668
+Next, we execute the call to printShoes,
+
+40
+00:02:18,668 --> 00:02:21,040
+creating a stack frame for print shoes,
+
+41
+00:02:21,040 --> 00:02:22,775
+in which the argument, myThreat,
+
+42
+00:02:22,775 --> 00:02:25,200
+is referred to as currThreat.
+
+43
+00:02:25,200 --> 00:02:26,950
+We mark the call site location,
+
+44
+00:02:26,950 --> 00:02:29,235
+and step into print shoes.
+
+45
+00:02:29,235 --> 00:02:32,830
+Inside printShoes, there is an if/else statement.
+
+46
+00:02:32,830 --> 00:02:37,960
+The if clause tests whether the current threat is greater than or equal to elevated.
+
+47
+00:02:37,960 --> 00:02:41,935
+In this case, we're testing whether 3 is greater than or equal to 2.
+
+48
+00:02:41,935 --> 00:02:45,075
+Since it is, we step into the then clause,
+
+49
+00:02:45,075 --> 00:02:46,405
+print out the message,
+
+50
+00:02:46,405 --> 00:02:48,055
+Please take off your shoes,
+
+51
+00:02:48,055 --> 00:02:50,430
+and exit the clause.
+
+52
+00:02:50,430 --> 00:02:54,850
+Now we return to the function that called print shoes, which is our main.
+
+53
+00:02:54,850 --> 00:02:59,140
+Upon returning, the stack frame for print shoes is destroyed.
+
+54
+00:02:59,140 --> 00:03:01,275
+Finally, the program exits the main,
+
+55
+00:03:01,275 --> 00:03:04,115
+and its stack frame is destroyed.
+
+56
+00:03:04,115 --> 00:03:09,100
+Notice how much easier the code is to read because we've used an enumerated type.
+
+57
+00:03:09,100 --> 00:03:11,037
+If instead, we had an int called,
+
+58
+00:03:11,037 --> 00:03:13,745
+threat_level, with values 0 through 4.
+
+59
+00:03:13,745 --> 00:03:15,910
+The code would be littered with a lot of numbers
+
+60
+00:03:15,910 --> 00:03:18,605
+whose meaning might be unclear to the reader.
+
+61
+00:03:18,605 --> 00:03:20,995
+Enumerated types make it easier to read,
+
+62
+00:03:20,995 --> 00:03:24,000
+write, and modify code.

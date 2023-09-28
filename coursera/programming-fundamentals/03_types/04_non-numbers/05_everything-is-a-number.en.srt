@@ -1,0 +1,213 @@
+1
+00:00:02,831 --> 00:00:07,406
+You just read about how everything is
+a number, but let's see how this principle
+
+2
+00:00:07,406 --> 00:00:11,392
+applies to some things that may not
+seem like numbers at first glance.
+
+3
+00:00:11,392 --> 00:00:12,906
+Strings are numbers,
+
+4
+00:00:12,906 --> 00:00:18,096
+you have seen literal sequences of
+characters before, such as Hello World!
+
+5
+00:00:18,096 --> 00:00:21,680
+But did you think about how
+the computer stores them as numbers?
+
+6
+00:00:21,680 --> 00:00:25,260
+Each character occupies some
+of the computer's memory.
+
+7
+00:00:25,260 --> 00:00:27,790
+We'll talk about exactly how much later,
+so
+
+8
+00:00:27,790 --> 00:00:30,250
+you can think of each character
+conceptually in a box.
+
+9
+00:00:31,330 --> 00:00:36,320
+In terms of hardware though, the computer
+stores each character as a number.
+
+10
+00:00:36,320 --> 00:00:40,110
+You can look up the decimal or hexadecimal
+values of different characters in an ASCII
+
+11
+00:00:40,110 --> 00:00:44,900
+table, and you can see the decimal values
+of these particular characters here.
+
+12
+00:00:44,900 --> 00:00:48,050
+Of course, the computer stores
+them as binary numbers.
+
+13
+00:00:48,050 --> 00:00:51,620
+One fun consequence of computers
+storing letters as numbers
+
+14
+00:00:51,620 --> 00:00:53,270
+is that we can do math on them.
+
+15
+00:00:53,270 --> 00:00:57,250
+This principle underlies most
+modern methods of cryptography.
+
+16
+00:00:58,670 --> 00:01:02,780
+Another thing that may not seem to
+be a number at first is an image,
+
+17
+00:01:02,780 --> 00:01:04,670
+like this one of some flowers.
+
+18
+00:01:04,670 --> 00:01:08,410
+This image is made of
+about a million pixels,
+
+19
+00:01:08,410 --> 00:01:12,310
+which each numerically represent
+the colors in the image.
+
+20
+00:01:12,310 --> 00:01:16,970
+To see these pixels, let's zoom in
+on this small section of the image.
+
+21
+00:01:16,970 --> 00:01:20,970
+Here, you can see the image
+magnified several times.
+
+22
+00:01:20,970 --> 00:01:24,470
+You can see how this image looks blocky or
+pixelated.
+
+23
+00:01:24,470 --> 00:01:28,660
+This is what the image actually looks
+like if you could look that closely.
+
+24
+00:01:28,660 --> 00:01:30,390
+Note that if you try this yourself,
+
+25
+00:01:30,390 --> 00:01:33,540
+you might end up with something
+that looks much smoother like this.
+
+26
+00:01:33,540 --> 00:01:37,440
+Most image software will apply algorithms
+to smooth out the pixelation when you
+
+27
+00:01:37,440 --> 00:01:38,730
+enlarge an image.
+
+28
+00:01:38,730 --> 00:01:41,551
+You have to turn that off
+to see the original pixels.
+
+29
+00:01:41,551 --> 00:01:46,140
+Let us return to our enlarged image that
+shows the original pixels more clearly.
+
+30
+00:01:46,140 --> 00:01:50,691
+If we look only at a subset of this image,
+and blow it up even further,
+
+31
+00:01:50,691 --> 00:01:54,699
+we can see and talk about
+the individual pixels more easily.
+
+32
+00:01:54,699 --> 00:01:58,688
+Here are 16 pixels from the original
+image, which had about a million pixels,
+
+33
+00:01:58,688 --> 00:02:02,360
+just to give you an idea of how
+much we have zoomed in now.
+
+34
+00:02:02,360 --> 00:02:07,140
+This dark purple pixel has a red
+value of 55, a green value of 27,
+
+35
+00:02:07,140 --> 00:02:09,730
+and a blue value of 75.
+
+36
+00:02:09,730 --> 00:02:14,840
+Meanwhile, this golden pixel has
+drastically different RGB values,
+
+37
+00:02:14,840 --> 00:02:18,450
+166, 136, and 41,
+giving it an entirely different color.
+
+38
+00:02:20,480 --> 00:02:24,170
+Sound is another important
+thing that computers process.
+
+39
+00:02:24,170 --> 00:02:27,520
+As I'm talking, you can see
+the waveforms of what I'm saying.
+
+40
+00:02:27,520 --> 00:02:31,570
+The computer encodes these as numbers and
+sends them to the sound hardware,
+
+41
+00:02:31,570 --> 00:02:36,970
+which uses them to determine how to move
+the speaker generating the desired sound.
+
+42
+00:02:36,970 --> 00:02:40,590
+There are many other types of data you
+might want to represent and compute on.
+
+43
+00:02:40,590 --> 00:02:44,380
+You'll learn about data that is
+formed from sequences in Course 3.
+
+44
+00:02:44,380 --> 00:02:47,235
+For now, you're going to learn
+about structs and typedefs.

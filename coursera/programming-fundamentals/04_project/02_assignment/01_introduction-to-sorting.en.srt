@@ -1,0 +1,151 @@
+1
+00:00:02,590 --> 00:00:07,805
+Your final project in this course is going to be to write a sorting algorithm.
+
+2
+00:00:07,805 --> 00:00:10,730
+That is an algorithm that takes a sequence of numbers as
+
+3
+00:00:10,730 --> 00:00:14,715
+input and puts them in ascending order from largest to smallest.
+
+4
+00:00:14,715 --> 00:00:17,660
+For example, if you had the following input data,
+
+5
+00:00:17,660 --> 00:00:19,850
+you would want your algorithm to rearrange
+
+6
+00:00:19,850 --> 00:00:23,405
+them so that you have this sequence: the same numbers,
+
+7
+00:00:23,405 --> 00:00:25,805
+but ordered from smallest to largest.
+
+8
+00:00:25,805 --> 00:00:27,500
+Of course, what we did here,
+
+9
+00:00:27,500 --> 00:00:31,920
+just reshuffled them all at once in a way that is very hard to generalize.
+
+10
+00:00:31,920 --> 00:00:34,250
+You will want to think of a more step-by-step way
+
+11
+00:00:34,250 --> 00:00:37,390
+to sort your data for any sequence of numbers.
+
+12
+00:00:37,390 --> 00:00:40,185
+Okay, so why think about sorting?
+
+13
+00:00:40,185 --> 00:00:41,600
+Well, for one thing,
+
+14
+00:00:41,600 --> 00:00:46,180
+sorting is an important and ubiquitous algorithm in Computer Science.
+
+15
+00:00:46,180 --> 00:00:50,570
+For example, my email client lets me sort my messages by subject,
+
+16
+00:00:50,570 --> 00:00:52,910
+date, or a variety of other criteria.
+
+17
+00:00:52,910 --> 00:00:55,595
+Sorting data makes it easier to find what you need.
+
+18
+00:00:55,595 --> 00:00:57,200
+When I am on Facebook,
+
+19
+00:00:57,200 --> 00:00:59,240
+there is a list of trending stories.
+
+20
+00:00:59,240 --> 00:01:02,810
+How would you get the most popular stories from a list of all stories?
+
+21
+00:01:02,810 --> 00:01:04,835
+You would sort by popularity,
+
+22
+00:01:04,835 --> 00:01:07,675
+then take the top items from the list.
+
+23
+00:01:07,675 --> 00:01:10,685
+Likewise, if I search google for something,
+
+24
+00:01:10,685 --> 00:01:13,460
+it has many search results that might match my query,
+
+25
+00:01:13,460 --> 00:01:15,890
+but sorts them based on its ranking of them,
+
+26
+00:01:15,890 --> 00:01:18,230
+putting the results that are most likely to
+
+27
+00:01:18,230 --> 00:01:21,350
+be the best at the top of the results it displays.
+
+28
+00:01:21,350 --> 00:01:25,285
+And of course, there are many other examples.
+
+29
+00:01:25,285 --> 00:01:28,180
+Another reason why we picked sorting for you to work on,
+
+30
+00:01:28,180 --> 00:01:31,170
+is that there are many different correct ways to do it.
+
+31
+00:01:31,170 --> 00:01:34,955
+It is good to learn that many problems have a lot of different solutions.
+
+32
+00:01:34,955 --> 00:01:37,405
+As you peer review other peoples solutions,
+
+33
+00:01:37,405 --> 00:01:41,305
+you will hopefully see approaches that are different from what you thought of.
+
+34
+00:01:41,305 --> 00:01:45,365
+And lastly, it is easy to verify that the answer is correct.
+
+35
+00:01:45,365 --> 00:01:47,740
+When you peer review someone else's algorithm,
+
+36
+00:01:47,740 --> 00:01:50,170
+you can easily check if they got the right answer for
+
+37
+00:01:50,170 --> 00:01:54,545
+some input data by looking to see if they put the data in the right order.
+
+38
+00:01:54,545 --> 00:01:59,930
+So now let us put the seven steps to use and write a sorting algorithm.

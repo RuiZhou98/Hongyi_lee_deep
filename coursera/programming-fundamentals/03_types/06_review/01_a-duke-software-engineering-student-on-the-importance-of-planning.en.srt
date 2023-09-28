@@ -1,0 +1,337 @@
+1
+00:00:02,510 --> 00:00:04,620
+My name is Ivy.
+
+2
+00:00:04,620 --> 00:00:08,040
+I study at the Duke University
+for the MEng program,
+
+3
+00:00:08,040 --> 00:00:10,740
+aka Master of
+Engineering program,
+
+4
+00:00:10,740 --> 00:00:13,770
+and I'm studying Electrical
+and Computer Engineering.
+
+5
+00:00:13,770 --> 00:00:17,100
+Is a really awesome
+experience to be
+
+6
+00:00:17,100 --> 00:00:20,610
+a student in this university
+and in this program,
+
+7
+00:00:20,610 --> 00:00:23,265
+and I learn a lot here.
+
+8
+00:00:23,265 --> 00:00:25,319
+For some new programmer,
+
+9
+00:00:25,319 --> 00:00:27,120
+people may think
+that programming is
+
+10
+00:00:27,120 --> 00:00:29,550
+totally magic but
+actually is not.
+
+11
+00:00:29,550 --> 00:00:31,860
+Everything is following the logic
+
+12
+00:00:31,860 --> 00:00:34,335
+and have to make sense in
+the programming world.
+
+13
+00:00:34,335 --> 00:00:36,570
+So first, you need to trust
+
+14
+00:00:36,570 --> 00:00:40,265
+the logic rather than
+just think random things.
+
+15
+00:00:40,265 --> 00:00:42,925
+Then also for the programming,
+
+16
+00:00:42,925 --> 00:00:44,960
+planning is something that you
+
+17
+00:00:44,960 --> 00:00:47,270
+have to really take
+into consideration.
+
+18
+00:00:47,270 --> 00:00:50,450
+So rather than just put
+some random things and
+
+19
+00:00:50,450 --> 00:00:53,660
+pretending you're working
+in front of a screen,
+
+20
+00:00:53,660 --> 00:00:55,610
+and typing things
+on the keyboard,
+
+21
+00:00:55,610 --> 00:00:59,455
+you actually need to
+first make plans,
+
+22
+00:00:59,455 --> 00:01:01,290
+draw pictures, and seriously
+
+23
+00:01:01,290 --> 00:01:03,600
+think about what you need to do.
+
+24
+00:01:03,600 --> 00:01:06,300
+Then puts things implemented
+
+25
+00:01:06,300 --> 00:01:09,435
+actually in
+the programming world.
+
+26
+00:01:09,435 --> 00:01:13,285
+Also, in Duke
+University especially,
+
+27
+00:01:13,285 --> 00:01:15,965
+the professor and
+all their courses is
+
+28
+00:01:15,965 --> 00:01:18,920
+very well planned and designed.
+
+29
+00:01:18,920 --> 00:01:21,290
+So trust all the course project
+
+30
+00:01:21,290 --> 00:01:24,005
+you have to do and
+do it step-by-step,
+
+31
+00:01:24,005 --> 00:01:27,290
+you'll finally be
+a awesome programmer.
+
+32
+00:01:27,290 --> 00:01:29,570
+There's tons of project I've
+
+33
+00:01:29,570 --> 00:01:31,880
+finished in the whole program.
+
+34
+00:01:31,880 --> 00:01:34,400
+One thing I really
+wanted to talk about is
+
+35
+00:01:34,400 --> 00:01:36,770
+the UPS and Amazon project.
+
+36
+00:01:36,770 --> 00:01:39,680
+I've done in the
+server-less software class.
+
+37
+00:01:39,680 --> 00:01:42,570
+So basically what's
+happening is that
+
+38
+00:01:42,570 --> 00:01:46,350
+one team need to in-charge
+of the UPS system,
+
+39
+00:01:46,350 --> 00:01:47,420
+and another team need to be in
+
+40
+00:01:47,420 --> 00:01:49,235
+charge of the Amazon system.
+
+41
+00:01:49,235 --> 00:01:51,290
+We need to design the protocol
+
+42
+00:01:51,290 --> 00:01:53,845
+altogether to make
+everything work.
+
+43
+00:01:53,845 --> 00:01:57,800
+This project is very
+special for me because it
+
+44
+00:01:57,800 --> 00:02:01,355
+actually mimics what is
+happening in the industry life.
+
+45
+00:02:01,355 --> 00:02:04,160
+Because in industry
+there's no way you can
+
+46
+00:02:04,160 --> 00:02:07,280
+finish your whole system by
+yourself or even by one team.
+
+47
+00:02:07,280 --> 00:02:08,630
+So what is very
+
+48
+00:02:08,630 --> 00:02:10,940
+important is that you
+need to learn how to
+
+49
+00:02:10,940 --> 00:02:12,770
+communicate with other team and
+
+50
+00:02:12,770 --> 00:02:15,470
+design their protocol altogether.
+
+51
+00:02:15,470 --> 00:02:18,350
+So during the whole
+developing process,
+
+52
+00:02:18,350 --> 00:02:22,545
+we actually need to change
+our protocol step-by-step,
+
+53
+00:02:22,545 --> 00:02:24,705
+and finally, get to
+the perfect one.
+
+54
+00:02:24,705 --> 00:02:27,300
+The process is
+a little bit of painful,
+
+55
+00:02:27,300 --> 00:02:29,900
+but finally we'll put
+everything together and
+
+56
+00:02:29,900 --> 00:02:32,960
+find the whole system
+work perfectly.
+
+57
+00:02:32,960 --> 00:02:40,085
+It's really good and inside
+peaceful and happiness.
+
+58
+00:02:40,085 --> 00:02:41,780
+For those students who are
+
+59
+00:02:41,780 --> 00:02:45,124
+struggling in finding
+a job or an interview,
+
+60
+00:02:45,124 --> 00:02:48,335
+I totally understand what
+you're feeling right now.
+
+61
+00:02:48,335 --> 00:02:49,790
+I know it is hard,
+
+62
+00:02:49,790 --> 00:02:52,565
+but trust me you'll be flying.
+
+63
+00:02:52,565 --> 00:02:56,510
+I think for the most important
+things about finding
+
+64
+00:02:56,510 --> 00:03:00,500
+a job is not about how can
+I pass this interview,
+
+65
+00:03:00,500 --> 00:03:03,800
+but how can I be
+a great software engineer.
+
+66
+00:03:03,800 --> 00:03:07,070
+To achieve that goal all
+you need is to practice,
+
+67
+00:03:07,070 --> 00:03:11,030
+practice, and practice following
+all the cross project,
+
+68
+00:03:11,030 --> 00:03:12,260
+and all the advice from all of
+
+69
+00:03:12,260 --> 00:03:15,290
+those professors because
+they have their experience,
+
+70
+00:03:15,290 --> 00:03:18,170
+and they know what
+the industry world need.
+
+71
+00:03:18,170 --> 00:03:20,450
+Once you get more
+and more comfortable
+
+72
+00:03:20,450 --> 00:03:23,435
+to work as a software engineer,
+
+73
+00:03:23,435 --> 00:03:26,130
+the job will just come in to you.

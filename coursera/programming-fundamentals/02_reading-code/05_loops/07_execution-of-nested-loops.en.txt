@@ -1,0 +1,32 @@
+In this video we have
+an example of nesting. In function f we have a while loop
+with an if statement inside of it. And inside of the if statement
+there is a for loop. The important thing to remember
+with nesting is that there's really nothing special about it. We follow the same rules we've always see. We being with our execution
+arrow at the start of main. And the first thing we're going to do is
+call f, passing 3 for a, and 8 for b. We create a frame, as always. And we're going to remember
+where we're going to return, and begin executing code inside of f. Since a less than b is true, we're going
+to go inside the body of the while loop. We print a equals 3, b equals 8. And then we reach an if statement
+that checks if a mod 2 is 0. Remember that percent is the mod operator, which computes the remainder
+when you do division. 3 divided by 2 has a remainder of 1,
+so 3 mod 2 is 1. a mod 2 is not zero, so
+this conditional expression is false, and we skip over the if statement. >> a++ increments a to 4,
+and b-- decrements b to 7. Now we've reached the end
+of the while loop. So we jump to back to the beginning,
+and test it's condition again. a less than b is true, so
+we enter the body and print a=4, b=7. Now when we look at a mod 2, 4 mod 2 is 0. 0 = 0 is true, so
+we enter the if statement. Now we have a for loop. It's going to declare an int i, and
+initialize it to the value of a. So we make a box for i,
+and set it equal to 4. We then test the condition of the for
+loop. 4 less than 7 is true, so
+we enter the body of the for loop. We print i = 4. Then we perform the increment
+statement assigning 5 to i, and return to the begging of the loop. We check the condition again. 5 less than 7 is true, so we enter the for
+loop again, we print i = 5. Then we increment i to 6, and
+return to the beginning of the loop. We repeat this process. 6 less than 7, print i = 6. Increment i to 7, and
+return to the beginning. This time, 7 less than 7 is false. So we skip past the four loop,
+leaving the scope of i. And continue executing. We're now at the end of
+the if statement's body, so we resume executing right after it. We increment a to 5 and decrement b to 6,
+and now we're at the end of the y loop. So we jumped back to the top. A less than b is still true. So we enter the body, we print a=5, b=6. We check a mod 2. 5 mod 2 is 1, 1=0 is false,
+so we skip the if statement. We increment a to 6 and decrement b to 5. And return to the top of the while loop. 6 less than 5 is false. So we skip over the body of the while
+loop, reaching the end of the function. This causes us to return to main. The only thing left in main
+is the return statement, so we return 0 and exit the program.

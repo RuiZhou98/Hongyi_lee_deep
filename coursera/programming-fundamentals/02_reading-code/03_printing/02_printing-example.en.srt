@@ -1,0 +1,205 @@
+1
+00:00:03,095 --> 00:00:07,055
+In this video, we show an example of how
+you can use the printf function to print
+
+2
+00:00:07,055 --> 00:00:09,090
+output to the terminal.
+
+3
+00:00:09,090 --> 00:00:12,850
+We have our usual frame for
+main as well as a box for output.
+
+4
+00:00:12,850 --> 00:00:15,580
+And the execution arrow
+is at the start of main.
+
+5
+00:00:15,580 --> 00:00:19,296
+We begin by declaring and
+initializing a to 42.
+
+6
+00:00:19,296 --> 00:00:21,330
+Then we reach a printf call.
+
+7
+00:00:22,410 --> 00:00:25,080
+We're going to print
+the string Hello World.
+
+8
+00:00:25,080 --> 00:00:29,424
+It'll just print this string directly,
+there are no formats specifies at all.
+
+9
+00:00:29,424 --> 00:00:31,940
+So our output is Hello world.
+
+10
+00:00:31,940 --> 00:00:35,270
+The next printf call
+with print the string a.
+
+11
+00:00:35,270 --> 00:00:38,353
+Note that this prints the literal
+letter a since it is enclosed in
+
+12
+00:00:38,353 --> 00:00:41,280
+quotation marks and
+is therefore a string literal.
+
+13
+00:00:41,280 --> 00:00:44,140
+This has nothing with the variable a.
+
+14
+00:00:44,140 --> 00:00:45,650
+So our output is a.
+
+15
+00:00:47,200 --> 00:00:49,250
+And we return 0 and exit main.
+
+16
+00:00:50,370 --> 00:00:53,950
+What would you do if you wanted to instead
+print the value of the variable a?
+
+17
+00:00:55,040 --> 00:00:57,970
+The f in printf stands for formatted, and
+
+18
+00:00:57,970 --> 00:01:01,220
+there are several format specifiers
+you can use to format your output.
+
+19
+00:01:03,030 --> 00:01:09,268
+In this example, first we declare and
+initialize integers a to 42 and b to 7.
+
+20
+00:01:09,268 --> 00:01:13,350
+Then we reach a printf call
+with a format specifier.
+
+21
+00:01:13,350 --> 00:01:15,381
+In this case, %d.
+
+22
+00:01:15,381 --> 00:01:18,870
+%d formats integers as decimal numbers.
+
+23
+00:01:18,870 --> 00:01:23,141
+And you'll learn later about
+other format specifiers.
+
+24
+00:01:23,141 --> 00:01:27,613
+%d means printf will look at
+the corresponding argument to see what
+
+25
+00:01:27,613 --> 00:01:30,800
+integer format is a decimal number.
+
+26
+00:01:30,800 --> 00:01:34,740
+In this case, it is given variable a.
+
+27
+00:01:34,740 --> 00:01:38,510
+So it prints the decimal representation
+
+28
+00:01:38,510 --> 00:01:44,330
+of the number 42 in the location
+in the string where the %d is.
+
+29
+00:01:44,330 --> 00:01:47,250
+The next call to printf has two %ds.
+
+30
+00:01:47,250 --> 00:01:52,380
+The first refers to b, the next argument
+after the string which is 7, and
+
+31
+00:01:52,380 --> 00:01:58,760
+the second of these refers to a + b, which
+is evaluated like any other expression.
+
+32
+00:01:58,760 --> 00:02:02,850
+So it's 42 + 7 which is 49.
+
+33
+00:02:02,850 --> 00:02:07,368
+So the output is b is 7 and a + b is 49.
+
+34
+00:02:07,368 --> 00:02:09,690
+We return 0 and exit main.
+
+35
+00:02:10,790 --> 00:02:14,590
+Another important thing to know
+about printf is escape sequences.
+
+36
+00:02:14,590 --> 00:02:17,240
+An escape sequence
+begins with a backslash.
+
+37
+00:02:17,240 --> 00:02:21,450
+The most common one is
+\n which means new line.
+
+38
+00:02:21,450 --> 00:02:24,090
+This printf call has two \ns.
+
+39
+00:02:24,090 --> 00:02:27,308
+So you should print two new
+lines after Hello World.
+
+40
+00:02:27,308 --> 00:02:32,230
+This statement declares and
+initializes b to 7.
+
+41
+00:02:32,230 --> 00:02:37,200
+This printf call has a \t in it
+which means a tab, is useful for
+
+42
+00:02:37,200 --> 00:02:38,740
+lining up output.
+
+43
+00:02:38,740 --> 00:02:44,695
+The output is, my answer is tab 7,
+we return in exit main.
+
+44
+00:02:45,808 --> 00:02:49,510
+This introduction has shown you a few
+uses of the printf function and
+
+45
+00:02:49,510 --> 00:02:51,260
+you'll see more later in the course.

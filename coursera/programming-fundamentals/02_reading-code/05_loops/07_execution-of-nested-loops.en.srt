@@ -1,0 +1,258 @@
+1
+00:00:03,131 --> 00:00:07,010
+In this video we have
+an example of nesting.
+
+2
+00:00:07,010 --> 00:00:12,472
+In function f we have a while loop
+with an if statement inside of it.
+
+3
+00:00:12,472 --> 00:00:15,990
+And inside of the if statement
+there is a for loop.
+
+4
+00:00:15,990 --> 00:00:18,580
+The important thing to remember
+with nesting is that there's
+
+5
+00:00:18,580 --> 00:00:20,510
+really nothing special about it.
+
+6
+00:00:20,510 --> 00:00:23,670
+We follow the same rules we've always see.
+
+7
+00:00:23,670 --> 00:00:27,063
+We being with our execution
+arrow at the start of main.
+
+8
+00:00:27,063 --> 00:00:34,150
+And the first thing we're going to do is
+call f, passing 3 for a, and 8 for b.
+
+9
+00:00:34,150 --> 00:00:36,680
+We create a frame, as always.
+
+10
+00:00:36,680 --> 00:00:39,190
+And we're going to remember
+where we're going to return, and
+
+11
+00:00:39,190 --> 00:00:40,960
+begin executing code inside of f.
+
+12
+00:00:42,110 --> 00:00:47,910
+Since a less than b is true, we're going
+to go inside the body of the while loop.
+
+13
+00:00:47,910 --> 00:00:50,377
+We print a equals 3, b equals 8.
+
+14
+00:00:50,377 --> 00:00:55,050
+And then we reach an if statement
+that checks if a mod 2 is 0.
+
+15
+00:00:55,050 --> 00:00:58,013
+Remember that percent is the mod operator,
+
+16
+00:00:58,013 --> 00:01:01,542
+which computes the remainder
+when you do division.
+
+17
+00:01:01,542 --> 00:01:06,860
+3 divided by 2 has a remainder of 1,
+so 3 mod 2 is 1.
+
+18
+00:01:06,860 --> 00:01:12,040
+a mod 2 is not zero, so
+this conditional expression is false, and
+
+19
+00:01:12,040 --> 00:01:16,219
+we skip over the if statement.
+
+20
+00:01:16,219 --> 00:01:20,679
+>> a++ increments a to 4,
+and b-- decrements b to 7.
+
+21
+00:01:20,679 --> 00:01:24,250
+Now we've reached the end
+of the while loop.
+
+22
+00:01:24,250 --> 00:01:28,520
+So we jump to back to the beginning,
+and test it's condition again.
+
+23
+00:01:28,520 --> 00:01:35,460
+a less than b is true, so
+we enter the body and print a=4, b=7.
+
+24
+00:01:35,460 --> 00:01:39,929
+Now when we look at a mod 2, 4 mod 2 is 0.
+
+25
+00:01:39,929 --> 00:01:44,610
+0 = 0 is true, so
+we enter the if statement.
+
+26
+00:01:45,620 --> 00:01:47,497
+Now we have a for loop.
+
+27
+00:01:47,497 --> 00:01:52,520
+It's going to declare an int i, and
+initialize it to the value of a.
+
+28
+00:01:52,520 --> 00:01:55,990
+So we make a box for i,
+and set it equal to 4.
+
+29
+00:01:55,990 --> 00:01:58,460
+We then test the condition of the for
+loop.
+
+30
+00:01:58,460 --> 00:02:03,720
+4 less than 7 is true, so
+we enter the body of the for loop.
+
+31
+00:02:03,720 --> 00:02:05,969
+We print i = 4.
+
+32
+00:02:05,969 --> 00:02:09,608
+Then we perform the increment
+statement assigning 5 to i,
+
+33
+00:02:09,608 --> 00:02:12,770
+and return to the begging of the loop.
+
+34
+00:02:12,770 --> 00:02:14,353
+We check the condition again.
+
+35
+00:02:14,353 --> 00:02:21,487
+5 less than 7 is true, so we enter the for
+loop again, we print i = 5.
+
+36
+00:02:21,487 --> 00:02:26,180
+Then we increment i to 6, and
+return to the beginning of the loop.
+
+37
+00:02:26,180 --> 00:02:28,160
+We repeat this process.
+
+38
+00:02:28,160 --> 00:02:32,367
+6 less than 7, print i = 6.
+
+39
+00:02:32,367 --> 00:02:34,750
+Increment i to 7, and
+return to the beginning.
+
+40
+00:02:35,820 --> 00:02:38,780
+This time, 7 less than 7 is false.
+
+41
+00:02:38,780 --> 00:02:41,654
+So we skip past the four loop,
+leaving the scope of i.
+
+42
+00:02:41,654 --> 00:02:43,334
+And continue executing.
+
+43
+00:02:43,334 --> 00:02:46,378
+We're now at the end of
+the if statement's body,
+
+44
+00:02:46,378 --> 00:02:49,400
+so we resume executing right after it.
+
+45
+00:02:49,400 --> 00:02:54,922
+We increment a to 5 and decrement b to 6,
+and now we're at the end of the y loop.
+
+46
+00:02:54,922 --> 00:02:57,680
+So we jumped back to the top.
+
+47
+00:02:57,680 --> 00:02:59,780
+A less than b is still true.
+
+48
+00:02:59,780 --> 00:03:04,660
+So we enter the body, we print a=5, b=6.
+
+49
+00:03:04,660 --> 00:03:05,790
+We check a mod 2.
+
+50
+00:03:05,790 --> 00:03:12,185
+5 mod 2 is 1, 1=0 is false,
+so we skip the if statement.
+
+51
+00:03:12,185 --> 00:03:16,591
+We increment a to 6 and decrement b to 5.
+
+52
+00:03:16,591 --> 00:03:19,415
+And return to the top of the while loop.
+
+53
+00:03:19,415 --> 00:03:21,770
+6 less than 5 is false.
+
+54
+00:03:21,770 --> 00:03:25,260
+So we skip over the body of the while
+loop, reaching the end of the function.
+
+55
+00:03:26,270 --> 00:03:28,910
+This causes us to return to main.
+
+56
+00:03:28,910 --> 00:03:32,270
+The only thing left in main
+is the return statement, so
+
+57
+00:03:32,270 --> 00:03:34,470
+we return 0 and exit the program.

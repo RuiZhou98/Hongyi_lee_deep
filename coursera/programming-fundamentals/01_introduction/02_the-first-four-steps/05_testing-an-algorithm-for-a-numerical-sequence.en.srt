@@ -1,0 +1,211 @@
+1
+00:00:02,550 --> 00:00:07,375
+In this video, we're going to test the algorithm that we just wrote.
+
+2
+00:00:07,375 --> 00:00:11,720
+We're going to be counting from zero to N and N as a variable.
+
+3
+00:00:11,720 --> 00:00:14,750
+We're going to draw boxes for each of our variables to keep
+
+4
+00:00:14,750 --> 00:00:18,590
+track of what value they currently have as we step through our algorithm.
+
+5
+00:00:18,590 --> 00:00:22,620
+As we begin, N has the value, five.
+
+6
+00:00:22,620 --> 00:00:26,580
+The other thing we're going to keep track of is the output of our program.
+
+7
+00:00:26,580 --> 00:00:28,517
+Here is a box labeled, output,
+
+8
+00:00:28,517 --> 00:00:30,750
+and every time we write something down,
+
+9
+00:00:30,750 --> 00:00:34,235
+we're going to write it into this output box.
+
+10
+00:00:34,235 --> 00:00:38,150
+Finally, we're going to use a green arrow to keep track of where we are.
+
+11
+00:00:38,150 --> 00:00:43,370
+Right now, the arrow is right before the line that says count from zero to N,
+
+12
+00:00:43,370 --> 00:00:48,415
+which means we haven't done this yet. Now, we can start.
+
+13
+00:00:48,415 --> 00:00:52,510
+The first thing we want to do is count from zero to N inclusive,
+
+14
+00:00:52,510 --> 00:00:55,555
+and call each number that we're counting, i.
+
+15
+00:00:55,555 --> 00:00:57,395
+Since i is a variable,
+
+16
+00:00:57,395 --> 00:00:59,560
+and it's going to start with the value zero,
+
+17
+00:00:59,560 --> 00:01:04,085
+we create a box to hold i and its value of zero.
+
+18
+00:01:04,085 --> 00:01:07,455
+Now, we enter the next step.
+
+19
+00:01:07,455 --> 00:01:12,370
+The next thing we're going to do is write down N squared minus two times i.
+
+20
+00:01:12,370 --> 00:01:14,910
+We have a little bit of math to do here.
+
+21
+00:01:14,910 --> 00:01:16,475
+N is the value, 5,
+
+22
+00:01:16,475 --> 00:01:18,635
+and i has the value, zero,
+
+23
+00:01:18,635 --> 00:01:23,285
+so this gives us 25 minus zero or 25.
+
+24
+00:01:23,285 --> 00:01:26,435
+And again, we're supposed to write this number down,
+
+25
+00:01:26,435 --> 00:01:30,695
+so we place this number into our output box.
+
+26
+00:01:30,695 --> 00:01:36,480
+Now, this process is going to repeat again and again.
+
+27
+00:01:36,480 --> 00:01:39,145
+Now, i is going to have the value one.
+
+28
+00:01:39,145 --> 00:01:43,190
+Once again, we're going to compute N squared minus two times i.
+
+29
+00:01:43,190 --> 00:01:47,450
+This is the same as last time except i has the value of one.
+
+30
+00:01:47,450 --> 00:01:51,110
+This is 25 minus two or 23.
+
+31
+00:01:51,110 --> 00:01:54,525
+We write that to our output box.
+
+32
+00:01:54,525 --> 00:01:56,535
+Now, we just completed i equals zero,
+
+33
+00:01:56,535 --> 00:01:57,915
+and i equals one,
+
+34
+00:01:57,915 --> 00:02:03,335
+and we're trying to get all the way to i equals five.
+
+35
+00:02:03,335 --> 00:02:06,330
+So now, we're working on i with a value of two.
+
+36
+00:02:06,330 --> 00:02:09,800
+Once again, N squared minus two times i,
+
+37
+00:02:09,800 --> 00:02:12,305
+which is 25 minus four,
+
+38
+00:02:12,305 --> 00:02:17,680
+the value is 21, and we will write this to our output box.
+
+39
+00:02:17,680 --> 00:02:25,920
+Now, we're working on i with the value of three.
+
+40
+00:02:25,920 --> 00:02:27,795
+We're going to write down the number,
+
+41
+00:02:27,795 --> 00:02:30,630
+N squared minus two times i,
+
+42
+00:02:30,630 --> 00:02:33,810
+25 minus 6 which is 19,
+
+43
+00:02:33,810 --> 00:02:37,320
+into our output box.
+
+44
+00:02:38,370 --> 00:02:42,298
+And we're going to keep doing this.
+
+45
+00:02:42,298 --> 00:02:46,520
+For i having the value four, which is 17.
+
+46
+00:02:46,520 --> 00:02:48,290
+For i equals five,
+
+47
+00:02:48,290 --> 00:02:56,140
+which is 15. i keeps getting larger each time we step through our algorithm.
+
+48
+00:02:56,140 --> 00:02:58,180
+When i equals 6, however,
+
+49
+00:02:58,180 --> 00:03:04,020
+we're going to stop because we're only counting up to N equals five.
+
+50
+00:03:04,020 --> 00:03:06,665
+At this point, we finished the entire algorithm,
+
+51
+00:03:06,665 --> 00:03:10,540
+and the good news is that our answer matches what we were expecting.
+
+52
+00:03:10,540 --> 00:03:12,100
+The sequence of numbers is,
+
+53
+00:03:12,100 --> 00:03:15,000
+in fact, what we were hoping to produce.

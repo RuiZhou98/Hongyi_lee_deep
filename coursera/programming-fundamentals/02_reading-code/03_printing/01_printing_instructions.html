@@ -1,0 +1,110 @@
+<meta charset="utf-8"/>
+<co-content>
+ <h2 level="2">
+  Printing
+ </h2>
+ <p>
+  Our example programs so far have computed results, but had no way to communicate them to the user. Such programs would be useless in practice. Real programs have means to communicate with their user, both to read input and to provide output. Many programs that you are accustomed to have Graphical User Interfaces (GUIs), however, we will work primarily with programs that use a command line interface. Writing GUIs is a more complex task, and requires a variety of additional concepts.
+ </p>
+ <p>
+  Command line programs provide output to their user by printing it out on the terminal. In C, printing output is accomplished by calling the
+  <strong>
+   printf
+  </strong>
+  function, which takes a string specifying what to print. We will learn more about strings later, as they require knowledge of pointers to understand. For now, you can think of them as being text—words, or sentences. In much the same way that we can write down numerical literals (such as 3, or -42), we can write down string literals by placing the string we want inside of quotation marks, e.g., "This is a string". If we wanted to print out the string, “Hello World”, we would type
+  <strong>
+   printf("Hello World");
+  </strong>
+  .
+ </p>
+ <p>
+  The f in
+  <strong>
+   printf
+  </strong>
+  stands for “formatted,” meaning that
+  <strong>
+   printf
+  </strong>
+  does not just print literal strings, but can take multiple arguments (of various types), format the output as a string, and print the result. To format output in this way, the string argument of
+  <strong>
+   printf
+  </strong>
+  (which is called the “format string”) includes special
+  <em>
+   format specifiers
+  </em>
+  , which start with a percent sign (%). For now, we will only concern ourselves with %d which specifies that an integer should be formatted as a decimal (base 10) number. For example, if we wrote the following code fragment:
+ </p>
+ <pre language="c_cpp">int x = 3;
+int y = 4;
+printf("x + y = %d", x + y);</pre>
+ <p>
+  it would print x + y = 7, because it would evaluate the expression x + y to get 3 + 4 which is 7, and format the number 7 as a decimal number in place of the %d specifier. The rest of the string is printed literally.
+ </p>
+ <p>
+  Another type of special information we can include in the string is
+  <em>
+   escape sequences
+  </em>
+  . Escape sequences are two (or more) characters, the first of which is a backslash (\), which gives the remaining characters special meaning. The most common escape sequence you will encounter is \n, which means “newline”. If you want your print statement to print a newline character (which makes the next output begin at the start of the next line), then you do so with \n. If you want a literal backslash (that is, you actually want to print a backslash), \\ is the escape sequence for that purpose. We will note that you generally will want to print a newline in your output, not only so that it looks nice, but also because printf does not actually print the output to the screen until it encounters a newline character, or is otherwise forced to do so.
+ </p>
+ <p>
+  We will discuss the various format specifiers
+  <strong>
+   printf
+  </strong>
+  accepts, as well as the escape sequences that C understands in the next module.
+ </p>
+ <p>
+  The next video demonstrates the execution of code that prints output.
+ </p>
+</co-content>
+<style>
+ body {
+    padding: 50px 85px 50px 85px;
+}
+
+table th, table td {
+    border: 1px solid #e0e0e0;
+    padding: 5px 20px;
+    text-align: left;
+}
+input {
+    margin: 10px;
+}
+}
+th {
+    font-weight: bold;
+}
+td, th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+pre {
+    display: block;
+    margin: 20px;
+    background: #424242;
+    color: #fff;
+    font-size: 13px;
+    white-space: pre-wrap;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    border: 1px solid #ccc;
+}
+</style>
+<script async="" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$$','$$'], ['$','$'] ],
+      displayMath: [ ["\\[","\\]"] ],
+      processEscapes: true
+    }
+  });
+</script>

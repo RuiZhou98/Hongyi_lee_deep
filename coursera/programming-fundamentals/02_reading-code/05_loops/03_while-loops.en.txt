@@ -1,0 +1,36 @@
+In this video, we're going to demonstrate the execution
+of code containing a whie loop. As always, we begin with the execution
+arrow at the start of main. The first statement
+declares a variable x and initializes it by calling g of 2 and 9. Inside of g,
+we declare the variable total and initialize it to 0, and
+then we reach a while loop. The conditional expression
+of this while loop is a less than b which in this
+case is 2 less than 9, which is true, so
+we enter the body of the while loop. The next statement is total plus equals a. Remember that this is shorthand for
+total equals total plus a, so total is going to equal
+0 plus 2 which is 2. We assign 2 to total and
+now we have a printf statement. A = %d, b = %d new line, where the first %d converts the value
+of a to a decimal number and the second %d converts the value
+of b to a decimal number. This prints out a = 2, b = 9. The next statement is a ++. Recall that this is shorthand for
+a = a + 1, so we're going to do a = 3. B-- is shorthand for b = b- 1, so we're going to do b = 8. Now we've reached the close curly
+brace of the while loop, so our execution arrow jumps right back up to
+the top of the while loop, right before the conditional expression to determine
+if we should enter the body of the loop. Evaluating the conditional expression
+gives 3 less than 8 which is true, so we enter the body of
+the while loop again. We do total +=a, 2+3 is 5, so we update total. Then, we're going to print a=3, b=8. We're going to increment a by 1 and
+decrement b by 1. We reach the close curly brace at
+the bottom of the while loop again, so we jump back up to the top. 4 less than 7 is true, so
+we enter the body of the while loop. Total += a, printf a=4,
+b=7, increment a and decrement, jump back to
+the top of the loop. 5 less than 6 is true, so
+we enter the body of the while loop. We execute each statement
+in the loop as before. Now, however, when we get back
+to the top of the loop and evaluate our conditional expression,
+we find 6 less that 5 is false. Our execution arrow skips
+over the body of the loop and begins executing statements
+immediately after it. The value of total to return is 14,
+so we return that to main leaving function g and returning
+our execution arrow back in to main where we can now complete our
+initialization of x with x = 14. We then continue executing
+statements in main. We print out x = 14 and we return 0
+exiting main and leaving the program.

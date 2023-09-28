@@ -1,0 +1,147 @@
+1
+00:00:03,020 --> 00:00:08,715
+Let's take a look at some example code that shows when implicit conversions happen,
+
+2
+00:00:08,715 --> 00:00:11,190
+and how you have to be careful about types.
+
+3
+00:00:11,190 --> 00:00:15,930
+First, we make an int called nHrs and initialize it to 40.
+
+4
+00:00:15,930 --> 00:00:19,770
+Next, we make nDays and initialize it to seven.
+
+5
+00:00:19,770 --> 00:00:21,750
+Next, we have a float called average,
+
+6
+00:00:21,750 --> 00:00:25,485
+which is initialized to nHours divided by nDays.
+
+7
+00:00:25,485 --> 00:00:30,480
+Both nHours and nDays are ints so this is integer division.
+
+8
+00:00:30,480 --> 00:00:32,280
+We have 40 divided by seven,
+
+9
+00:00:32,280 --> 00:00:35,520
+which for integer division results in five.
+
+10
+00:00:35,520 --> 00:00:38,505
+Now since we are assigning an int to a float,
+
+11
+00:00:38,505 --> 00:00:43,509
+the compiler will implicitly convert that integer result to a floating point number.
+
+12
+00:00:43,509 --> 00:00:45,895
+But it does that after the division,
+
+13
+00:00:45,895 --> 00:00:50,300
+so we end up initializing average with a value of 5.0.
+
+14
+00:00:50,300 --> 00:00:56,775
+Then we print out that 40 hours in 7 days is 5.0 hours per day.
+
+15
+00:00:56,775 --> 00:00:58,923
+This is not the right answer,
+
+16
+00:00:58,923 --> 00:01:01,140
+so let's fix this code.
+
+17
+00:01:01,140 --> 00:01:04,565
+Here we've made one small change to the code.
+
+18
+00:01:04,565 --> 00:01:09,645
+We have explicitly cast nDays to a float before we do the division,
+
+19
+00:01:09,645 --> 00:01:12,110
+which is called out with the red underline here.
+
+20
+00:01:12,110 --> 00:01:13,980
+We start the same way,
+
+21
+00:01:13,980 --> 00:01:16,725
+nHours is created and initialized to 40,
+
+22
+00:01:16,725 --> 00:01:20,320
+and nDays is created and initialized to seven.
+
+23
+00:01:20,320 --> 00:01:22,700
+However, now things go differently.
+
+24
+00:01:22,700 --> 00:01:26,810
+The divisor of this expression is now seven cast to a float,
+
+25
+00:01:26,810 --> 00:01:32,880
+so we need to evaluate the integer 40 divided by the floating point numbers 7.0.
+
+26
+00:01:32,880 --> 00:01:35,435
+Computers divide integers by integers
+
+27
+00:01:35,435 --> 00:01:38,245
+or floating point numbers by floating point numbers,
+
+28
+00:01:38,245 --> 00:01:40,670
+so the compiler has to implicitly convert
+
+29
+00:01:40,670 --> 00:01:44,900
+40 to a floating point number before doing the division.
+
+30
+00:01:44,900 --> 00:01:46,970
+Now we are doing floating point division,
+
+31
+00:01:46,970 --> 00:01:52,630
+14.0 divided by 7.0 equals 5.71.
+
+32
+00:01:52,630 --> 00:01:57,360
+We now initialize average with this value which means that when we print out our results,
+
+33
+00:01:57,360 --> 00:01:59,570
+we get the correct answer.
+
+34
+00:01:59,570 --> 00:02:04,495
+Now you have seen both implicit conversions as well as explicit casts.
+
+35
+00:02:04,495 --> 00:02:06,870
+Casting is something you use when you need to.
+
+36
+00:02:06,870 --> 00:02:08,930
+However, you should use it sparingly,
+
+37
+00:02:08,930 --> 00:02:13,790
+only when you think through what you are converting between and why.

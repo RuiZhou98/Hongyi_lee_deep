@@ -1,0 +1,76 @@
+<meta charset="utf-8"/>
+<co-content>
+ <h2 level="2">
+  Sound and Video
+ </h2>
+ <p>
+  Sound is another common aspect of computer use that seems like it is not a number. However, sound is a naturally a waveform, which can easily be represented as a sequence of numbers. The most direct numeric representation of a sound wave is to record the “height” of the wave at periodic intervals, forming a sequence of numbers. The frequency of these intervals is called the sampling rate (higher sampling rates result in better quality of the sound), and is typically 22 kHz or 44kHz—that is 22,000 or 44,000 samples per second. Stereo sound simply has 2 sequences of numbers—one for the left channel and one for the right channel. As with images, there are many typical formats (
+  <em>
+   e.g.
+  </em>
+  , WAV, AIFF, AAC,
+  <em>
+   etc.
+  </em>
+  ), some of which are compressed (again, the sound is just numbers, so we can do math on it).
+ </p>
+ <p>
+  Videos (including those found in this course) again seem to defy the “everything is a number” rule—however, by now, you should see the path to numeric encoding. A video is a sequence of images (called “frames”) and the corresponding sound. We have already seen how to encode images and sound as numbers. The simplest approach would be to encode the video as the sequence of images plus the sound. While this approach gives us a bunch of numbers, it would be huge—one minute of a 512 pixel x 256 pixel video at 32 frames per second with a stereo sound track at 44 kHz would require about 725 Megabytes (almost 1 GB). Correspondingly, all common movie formats (
+  <em>
+   e.g.
+  </em>
+  , MP4, MOV,
+  <em>
+   etc.
+  </em>
+  ) apply compression, not only to the images and sound themselves, but also in terms of not storing the entire image for all frames, but rather storing a way to compute the next frame’s image based on the changes from the previous frame. The following video demonstrates some examples of "everything is a number."
+ </p>
+</co-content>
+<style>
+ body {
+    padding: 50px 85px 50px 85px;
+}
+
+table th, table td {
+    border: 1px solid #e0e0e0;
+    padding: 5px 20px;
+    text-align: left;
+}
+input {
+    margin: 10px;
+}
+}
+th {
+    font-weight: bold;
+}
+td, th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+pre {
+    display: block;
+    margin: 20px;
+    background: #424242;
+    color: #fff;
+    font-size: 13px;
+    white-space: pre-wrap;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    border: 1px solid #ccc;
+}
+</style>
+<script async="" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$$','$$'], ['$','$'] ],
+      displayMath: [ ["\\[","\\]"] ],
+      processEscapes: true
+    }
+  });
+</script>

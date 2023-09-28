@@ -1,0 +1,309 @@
+1
+00:00:03,630 --> 00:00:07,690
+In this video, we're going to step through
+the process of designing an algorithm in
+
+2
+00:00:07,690 --> 00:00:10,170
+the context of the following problem.
+
+3
+00:00:10,170 --> 00:00:15,388
+Here we have a 16x16 grid and we're
+interested in drawing a blue rectangle of
+
+4
+00:00:15,388 --> 00:00:21,150
+particular height and width located at
+a particular starting x, y location.
+
+5
+00:00:21,150 --> 00:00:25,330
+So to begin with, we'll just look at
+a specific instance of this problem.
+
+6
+00:00:25,330 --> 00:00:29,926
+Let's suppose that the starting point
+should have the x and y coordinates (7,9).
+
+7
+00:00:29,926 --> 00:00:35,520
+The width of the rectangle should be 8 and
+the height of the rectangle should be 4.
+
+8
+00:00:35,520 --> 00:00:37,890
+Now, to do an instance of the problem,
+
+9
+00:00:37,890 --> 00:00:42,510
+we're going to look at our starting
+point and simply draw that rectangle.
+
+10
+00:00:42,510 --> 00:00:45,170
+You can assume that you have
+some kind of a blue pen and
+
+11
+00:00:45,170 --> 00:00:48,440
+you are just going to draw this
+rectangle as the problem specified.
+
+12
+00:00:50,120 --> 00:00:53,330
+Now we need to take a step back and
+write down what we just did.
+
+13
+00:00:55,350 --> 00:00:58,580
+The first thing that we did
+was start at point (7,9) and
+
+14
+00:00:58,580 --> 00:01:02,050
+draw a horizontal line the length of 8.
+
+15
+00:01:02,050 --> 00:01:07,228
+Next, we draw another horizontal
+line of length 8 starting at (7,10).
+
+16
+00:01:07,228 --> 00:01:10,440
+A third horizontal line that
+starts one point higher.
+
+17
+00:01:10,440 --> 00:01:13,299
+And finally, a fourth horizontal
+line starting at (7,12).
+
+18
+00:01:13,299 --> 00:01:15,686
+Let's step away from the drawing and
+
+19
+00:01:15,686 --> 00:01:20,230
+look at the actual lines we've
+written out, describing what we did.
+
+20
+00:01:21,750 --> 00:01:24,650
+You'll notice that this is
+a very repetitive process.
+
+21
+00:01:24,650 --> 00:01:28,570
+The only difference in these
+four steps is the y coordinate.
+
+22
+00:01:28,570 --> 00:01:32,170
+The y coordinate starts at 9 and
+stops at 12.
+
+23
+00:01:32,170 --> 00:01:35,560
+The reason that we start at 9
+is because that's the starting
+
+24
+00:01:35,560 --> 00:01:37,770
+y coordinate of our rectangle.
+
+25
+00:01:37,770 --> 00:01:41,560
+The reason we stop at 12 is because we're
+interested in drawing a rectangle but
+
+26
+00:01:41,560 --> 00:01:43,040
+has height 4.
+
+27
+00:01:43,040 --> 00:01:48,320
+So, we're going to draw four horizontal
+lines stopping at y + height- 1.
+
+28
+00:01:50,818 --> 00:01:53,040
+Now, that we've inspected
+these four steps,
+
+29
+00:01:54,270 --> 00:01:56,770
+let's try to write an algorithm
+that will generalize them.
+
+30
+00:01:57,880 --> 00:02:03,030
+Recall that we were counting up
+from y to the value y + height.
+
+31
+00:02:03,030 --> 00:02:09,192
+Now, this was actually an exclusive y +
+height, because we counted 9, 10, 11, 12.
+
+32
+00:02:09,192 --> 00:02:14,500
+We did not actually go all the way
+up to 13, which is y+height.
+
+33
+00:02:14,500 --> 00:02:18,320
+We're going to call this number i, and
+then for each of those values, we're going
+
+34
+00:02:18,320 --> 00:02:24,370
+to draw a horizontal line of length 8,
+starting at the coordinate (7,i).
+
+35
+00:02:24,370 --> 00:02:26,580
+Why are we drawing a line of length 8?
+
+36
+00:02:26,580 --> 00:02:29,040
+That's because it's
+the width of the rectangle.
+
+37
+00:02:29,040 --> 00:02:31,050
+So we can go ahead and call this width.
+
+38
+00:02:33,720 --> 00:02:36,100
+This way,
+we will be able to use our algorithm for
+
+39
+00:02:36,100 --> 00:02:38,490
+rectangles of different sizes.
+
+40
+00:02:38,490 --> 00:02:41,140
+And why are we starting
+at the x location 7?
+
+41
+00:02:41,140 --> 00:02:43,710
+Because that's our beginning x coordinate.
+
+42
+00:02:44,810 --> 00:02:46,480
+So we can call that x.
+
+43
+00:02:47,520 --> 00:02:51,450
+This way our algorithm will
+accommodate all values of x.
+
+44
+00:02:51,450 --> 00:02:53,510
+Now this part seems
+a little bit complicated.
+
+45
+00:02:53,510 --> 00:02:58,403
+We're going to draw a horizontal line
+of length width, starting at (x,i).
+
+46
+00:02:58,403 --> 00:03:02,130
+It's actually fine for this step
+to seem a little bit complicated.
+
+47
+00:03:02,130 --> 00:03:04,730
+We'll just call that a different
+programming problem.
+
+48
+00:03:04,730 --> 00:03:07,761
+We're going to assume that we
+either already know how to
+
+49
+00:03:07,761 --> 00:03:11,545
+draw a horizontal line of length
+width starting at (x, i).
+
+50
+00:03:11,545 --> 00:03:14,565
+Or we can solve this as its
+own programming problem,
+
+51
+00:03:14,565 --> 00:03:17,495
+beginning with steps 1
+through 4 all over again.
+
+52
+00:03:17,495 --> 00:03:21,285
+For this exercise we're just going to
+assume we know how to perform this step.
+
+53
+00:03:22,497 --> 00:03:25,697
+The last thing we want to do,is
+add a little bit more precision
+
+54
+00:03:25,697 --> 00:03:28,307
+because we wanted the line to be blue.
+
+55
+00:03:28,307 --> 00:03:32,847
+So our algorithm needs to specifically say
+that we are drawing a blue line of length
+
+56
+00:03:32,847 --> 00:03:36,413
+width, starting at the location (x,i).
+
+57
+00:03:36,413 --> 00:03:39,167
+Test this algorithm for yourself.
+
+58
+00:03:39,167 --> 00:03:42,517
+Give yourself a value of x, y, a width and
+
+59
+00:03:42,517 --> 00:03:46,820
+a height that you want to test out and
+see whether this works for you.
+
+60
+00:03:46,820 --> 00:03:49,869
+As a final note,
+some values of x, y, width and
+
+61
+00:03:49,869 --> 00:03:53,230
+height will cause you
+to draw off the grid.
+
+62
+00:03:53,230 --> 00:03:56,484
+In this case we're going to assume
+that nothing special happens and
+
+63
+00:03:56,484 --> 00:04:00,340
+that doing nothing in response to this,
+is the desired behavior.
+
+64
+00:04:00,340 --> 00:04:03,190
+Later on we'll look at ways
+of handling errors and
+
+65
+00:04:03,190 --> 00:04:05,850
+corner cases in a more
+sophisticated manner.

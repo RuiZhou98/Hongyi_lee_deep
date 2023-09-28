@@ -1,0 +1,120 @@
+<meta charset="utf-8"/>
+<co-content>
+ <h2 level="2">
+  Enumerated Types
+ </h2>
+ <p>
+  The last form of custom type that a programmer can create is called an enumerated type. Enumerated types are named constants that can increase the readability and the correctness of your code. They are most useful when you have a type of data with a set of values that you would like to label by their conceptual name (rather than using a raw number) and either the particular numerical values do not matter (as long as they are distinct), or they occur naturally in a sequential progression. For example, until 2011 the United States’ Homeland Security maintained a color-coded terrorism threat advisory scale that it used to maintain heightened or more relaxed security in various locations including major airports. There were five threat levels from green to red in ascending order of severity.
+ </p>
+ <p>
+  These five threat levels could be recorded in an enumerated type which we can create ourselves as shown in the following code.
+ </p>
+ <pre language="c_cpp">enum threat_level_t {
+  LOW,
+  GUARDED,
+  ELEVATED,
+  HIGH,
+  SEVERE
+};</pre>
+ <p>
+  We begin with the keyword
+  <strong>
+   enum
+  </strong>
+  , followed by the name of the new enumerated type, in this case threat_level_t. The various threat levels are placed in curly braces, as shown. Each level is assigned a constant value, starting with 0. The enumerated names are constant—they are not assignable variables. Their values cannot change throughout the program. The convention for indicating that a name denotes a constant is to write the name in all uppercase. However, variables of the enumerated type can be created, and assigned to normally.
+ </p>
+ <p>
+  Because enumerated types have integer values, they can be used in constructs such as simple value comparisons, switch statements, and for loops. the following code shows an example of the first two. The Enumerated Types lecture illustrates the execution of this code.
+ </p>
+ <pre language="c_cpp">void printThreat(enum threat_level_t threat){
+  switch(threat) {
+    case LOW:
+      printf("Green/Low.\n"); 
+      break;
+    case GUARDED:
+      printf("Blue/Guarded.\n"); 
+      break;
+    case ELEVATED:
+      printf("Yellow/Elevated.\n"); 
+      break;
+    case HIGH:
+      printf("Orange/High.\n"); 
+      break;
+    case SEVERE:
+      printf("Red/Severe.\n");
+      break;
+  } 
+}
+
+void printShoes(enum threat_level_t currThreat) {
+  if (currThreat &gt;= ELEVATED) {
+     printf("Please take off your shoes.\n”);
+  }
+  else {
+     printf("Please leave your shoes on.\n”);
+  }
+}
+
+int main(void) {
+  enum threat_level_t myThreat = HIGH;
+  printf("Current threat level is:\n");
+  printThreat(myThreat);
+  printShoes(myThreat);
+  return 0;
+}</pre>
+ <p>
+  Another example of enumerated types would be if we wanted to make a program that regularly refers to a small set of fruits: grapes, apples, oranges, bananas, and pears. Suppose we want to represent each of these as a number (because we regularly use constructs like switch statements on the fruits themselves), but we do not really care which number each is represented as. We can make a enumerated type,
+  <strong>
+   enum fruit_t {GRAPE, APPLE,...};
+  </strong>
+  and then use these constants throughout our code.
+ </p>
+</co-content>
+<style>
+ body {
+    padding: 50px 85px 50px 85px;
+}
+
+table th, table td {
+    border: 1px solid #e0e0e0;
+    padding: 5px 20px;
+    text-align: left;
+}
+input {
+    margin: 10px;
+}
+}
+th {
+    font-weight: bold;
+}
+td, th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+pre {
+    display: block;
+    margin: 20px;
+    background: #424242;
+    color: #fff;
+    font-size: 13px;
+    white-space: pre-wrap;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    border: 1px solid #ccc;
+}
+</style>
+<script async="" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$$','$$'], ['$','$'] ],
+      displayMath: [ ["\\[","\\]"] ],
+      processEscapes: true
+    }
+  });
+</script>

@@ -1,0 +1,77 @@
+1
+00:00:03,154 --> 00:00:07,964
+At this point, you've seen a lot of C
+syntax and learned the semantics of it,
+
+2
+00:00:07,964 --> 00:00:10,250
+how to execute it by hand.
+
+3
+00:00:10,250 --> 00:00:14,521
+So far, the only type you have
+seen is int, as in int x = 3.
+
+4
+00:00:14,521 --> 00:00:17,805
+You're probably wondering about types and
+
+5
+00:00:17,805 --> 00:00:22,950
+what exactly int means, or for
+that matter, what exactly a type is.
+
+6
+00:00:22,950 --> 00:00:26,630
+In the upcoming lesson, you're going to
+learn the answers to these questions and
+
+7
+00:00:26,630 --> 00:00:28,610
+many other things about types.
+
+8
+00:00:28,610 --> 00:00:32,340
+All of this is going to build on one
+key principle of computer science,
+
+9
+00:00:32,340 --> 00:00:34,160
+everything is a number.
+
+10
+00:00:34,160 --> 00:00:36,630
+Computers can only operate on numbers, so
+
+11
+00:00:36,630 --> 00:00:39,240
+all data has to be
+represented numerically.
+
+12
+00:00:39,240 --> 00:00:44,020
+Types tell the computer how to interpret
+and operate on the numeric representation.
+
+13
+00:00:44,020 --> 00:00:45,850
+As you progress through this lesson,
+
+14
+00:00:45,850 --> 00:00:48,830
+you will learn about other
+built-in types besides int.
+
+15
+00:00:48,830 --> 00:00:53,700
+You will also learn about implicit type
+conversions and explicit type casting.
+
+16
+00:00:53,700 --> 00:00:56,350
+As well as how to make your
+own types to represent
+
+17
+00:00:56,350 --> 00:00:57,950
+whatever data you need to work with

@@ -1,0 +1,203 @@
+1
+00:00:03,390 --> 00:00:06,460
+In this example, you're going to learn how to
+
+2
+00:00:06,460 --> 00:00:09,305
+execute code with a continue statement in it.
+
+3
+00:00:09,305 --> 00:00:12,880
+Here, we have a for loop that has a continue statement inside.
+
+4
+00:00:12,880 --> 00:00:16,390
+With a for loop, when you execute a continue statement,
+
+5
+00:00:16,390 --> 00:00:19,495
+the loop increment is performed with the continue.
+
+6
+00:00:19,495 --> 00:00:24,835
+To see this, let us first convert this for loop to the equivalent while loop.
+
+7
+00:00:24,835 --> 00:00:28,000
+Here, we've taken one step in the conversion process,
+
+8
+00:00:28,000 --> 00:00:30,700
+moving the variable declaration before the loop.
+
+9
+00:00:30,700 --> 00:00:32,860
+To move this closer to being a while loop,
+
+10
+00:00:32,860 --> 00:00:36,860
+we've moved the increment statement i++ to the end of the loop.
+
+11
+00:00:36,860 --> 00:00:42,330
+But notice that we also put i++ right before the continue statement.
+
+12
+00:00:42,330 --> 00:00:47,035
+Now, we've finished changing this for loop to an equivalent while loop.
+
+13
+00:00:47,035 --> 00:00:50,425
+Since i will go out of scope at the end of the function anyways,
+
+14
+00:00:50,425 --> 00:00:52,780
+we can get rid of the extra curly braces that we
+
+15
+00:00:52,780 --> 00:00:56,770
+wrote here without changing our code's behavior.
+
+16
+00:00:56,770 --> 00:01:00,220
+Now we are ready to begin executing.
+
+17
+00:01:00,220 --> 00:01:02,830
+We begin by calling our printRemainders function,
+
+18
+00:01:02,830 --> 00:01:04,246
+passing in negative two,
+
+19
+00:01:04,246 --> 00:01:07,060
+four and five as parameters.
+
+20
+00:01:07,060 --> 00:01:12,180
+We then declare i and initialize it to lo and reach our while loop.
+
+21
+00:01:12,180 --> 00:01:14,150
+i less than high is true,
+
+22
+00:01:14,150 --> 00:01:16,030
+so we enter the while loop.
+
+23
+00:01:16,030 --> 00:01:18,280
+i equals zero is false,
+
+24
+00:01:18,280 --> 00:01:24,735
+so we skip past the if statement and print five mod negative two is one.
+
+25
+00:01:24,735 --> 00:01:29,075
+We increment i and now have reached the end of the while loop.
+
+26
+00:01:29,075 --> 00:01:33,260
+So, we go back to the top of the loop.
+
+27
+00:01:33,260 --> 00:01:35,225
+i less than hi is true,
+
+28
+00:01:35,225 --> 00:01:36,900
+so we enter the loop body.
+
+29
+00:01:36,900 --> 00:01:39,310
+Again, i is not zero,
+
+30
+00:01:39,310 --> 00:01:44,905
+so we skip the if statement and print out five mod negative one is zero.
+
+31
+00:01:44,905 --> 00:01:49,330
+We increment i and then return to the top of the loop.
+
+32
+00:01:49,330 --> 00:01:52,455
+i less than hi is still true,
+
+33
+00:01:52,455 --> 00:01:55,110
+so we go inside the loop body.
+
+34
+00:01:55,110 --> 00:01:57,060
+However, now i is zero,
+
+35
+00:01:57,060 --> 00:02:00,445
+so we entered the then clause of this if statement.
+
+36
+00:02:00,445 --> 00:02:03,655
+We print that we cannot divide by zero.
+
+37
+00:02:03,655 --> 00:02:07,870
+Increment i and now reach the continue statement.
+
+38
+00:02:07,870 --> 00:02:11,680
+The continue statement just takes us to the start of the loop again,
+
+39
+00:02:11,680 --> 00:02:14,230
+right before we check the loop condition,
+
+40
+00:02:14,230 --> 00:02:18,030
+so we move the execution arrow back here.
+
+41
+00:02:18,030 --> 00:02:21,660
+Now we just do the next loop iteration as you would expect.
+
+42
+00:02:21,660 --> 00:02:23,880
+Since i is one not zero,
+
+43
+00:02:23,880 --> 00:02:27,355
+printing out a message and incrementing i.
+
+44
+00:02:27,355 --> 00:02:30,973
+We do the loop again with i being two,
+
+45
+00:02:30,973 --> 00:02:33,600
+printing out that five mod two is one,
+
+46
+00:02:33,600 --> 00:02:36,330
+and finally, one more time,
+
+47
+00:02:36,330 --> 00:02:41,340
+through the loop with i being three.
+
+48
+00:02:41,340 --> 00:02:43,620
+After this last iteration,
+
+49
+00:02:43,620 --> 00:02:45,920
+i less than hi is false,
+
+50
+00:02:45,920 --> 00:02:51,270
+so we skip the body of the while loop and return from printRemainders.
+
+51
+00:02:51,270 --> 00:02:55,490
+Now, we return from main, exiting the program.

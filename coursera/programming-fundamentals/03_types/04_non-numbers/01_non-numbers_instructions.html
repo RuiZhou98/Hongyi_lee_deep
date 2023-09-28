@@ -1,0 +1,69 @@
+<meta charset="utf-8"/>
+<co-content>
+ <h2 level="2">
+  "Non-numbers"
+ </h2>
+ <p>
+  It is worth restating:
+  <strong>
+   <em>
+    everything is a number
+   </em>
+  </strong>
+  . This rule is fundamental to understanding how computers work and is one of the most important concepts in programming. For every variable you create in any programming language, the value of that variable—the data that you place “in the box” of every conceptual diagram you draw—is stored in your computer as a series of zeros and ones. This fact is easy to accept for a positive integer, whose base 10 representation is simply converted to base 2 and then stored in a series of bits. Understanding how negative numbers and floating point numbers are also represented as a series of zeros and ones may be a little less straightforward, but is still appeals to our general intuition about numbers.
+ </p>
+ <p>
+  Extending this rule to things that do not seem like numbers—words, colors, pictures, songs, movies—may seem like a much harder conceptual leap. However, with our newfound understanding that computers can only operate on numbers, we must realize that all of these things must be numbers too—after all, our computers operate on them regularly.
+ </p>
+ <p>
+  Finding a way to encode these “non-number” data types is a simply a matter of coming up with a new convention for encoding the information as bits, and interpreting the bits to mean the original information. These new conventions are not  included as basic data types of the C programming language (though some of them are basic data types in languages other than C). Instead, new types are formed by combining the basic types to achieve the programmer’s goals. These more complex types may be widely accepted programming conventions (like the representation of strings), or may be something done by one single programmer specific to their programming task.
+ </p>
+</co-content>
+<style>
+ body {
+    padding: 50px 85px 50px 85px;
+}
+
+table th, table td {
+    border: 1px solid #e0e0e0;
+    padding: 5px 20px;
+    text-align: left;
+}
+input {
+    margin: 10px;
+}
+}
+th {
+    font-weight: bold;
+}
+td, th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+pre {
+    display: block;
+    margin: 20px;
+    background: #424242;
+    color: #fff;
+    font-size: 13px;
+    white-space: pre-wrap;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    border: 1px solid #ccc;
+}
+</style>
+<script async="" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$$','$$'], ['$','$'] ],
+      displayMath: [ ["\\[","\\]"] ],
+      processEscapes: true
+    }
+  });
+</script>
